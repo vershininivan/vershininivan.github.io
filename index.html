@@ -10,16 +10,14 @@
 	</script>
 	<script src="src/salvattore.min.js">
 	</script>
-	<link rel="shortcut icon" href="src/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="src/favicon.ico" type="image/png">
 </head>
 <body>
-	<div class="form-row form-row-title">
-		<strong>Данная страница еще находится на этапе разработки. Еще не все девайсы добавлены</strong>
-	</div>
-	<div class="form-row form-row-title">
-		<strong>Таблица девайсов</strong>
-	</div>
-	<hr>
+	<nav class="navbar">
+		<p class="navbar-logo">
+				Devices
+		</p>
+	</nav>
 	<div data-columns="" id="grid">
 		<div class="column size-1of2">
 			<div class="form-row form-row-title">
@@ -166,13 +164,14 @@
 			  <label><input class="checkbox" type="checkbox" value="Xiaomi Mi5 (6.0.1)"> <span class="checkbox-custom"></span> <span class="label">Xiaomi Mi5 (6.0.1)</span></label></div>
 			</div>
 	</div>
-	<hr>
-	<div class="form-row form-row-title">
-		<strong>Вывод списка девайсов:</strong>
-	</div>
-	<div  class="values" id="bar">
-		Ни один чекбокс не выбран
-	</div>
+		<div class="form-row form-row-title">
+			<strong>Вывод списка девайсов:</strong>
+		</div>
+	<nav class="navbar">
+		<div  class="values" id="bar">
+			Ни один чекбокс не выбран
+		</div>
+	</nav>
 	<!-- Target
 	<textarea  class="values"  id="bar">Mussum ipsum cacilds...</textarea> -->
 
@@ -192,7 +191,7 @@
 	                                  theArray[theArray.length] = $(box).val();
 	                              }
 	                          }
-														$('.button').css('background-color', '#FFE973');
+														$('.button').css('background-color', '#ffdb4d');
 	                          showValues(theArray);
 	                      });
 
