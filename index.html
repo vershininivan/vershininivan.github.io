@@ -176,8 +176,11 @@
 	<textarea  class="values"  id="bar">Mussum ipsum cacilds...</textarea> -->
 
 	<!-- Trigger -->
-	<button class="button" data-clipboard-action="copy" data-clipboard-target="#bar">
+	<button class="button" data-clipboard-action="copy" data-clipboard-target="#bar" id="text-copy">
 		Скопировать
+	</button>
+	<button class="button" id="restart-page">
+		Снять выбор
 	</button>
 	<script type="text/javascript">
 						var clipboard = new Clipboard('.button');
@@ -191,7 +194,7 @@
 	                                  theArray[theArray.length] = $(box).val();
 	                              }
 	                          }
-														$('.button').css('background-color', '#ffdb4d');
+														$('#text-copy').css('background-color', '#ffdb4d');
 	                          showValues(theArray);
 	                      });
 
@@ -199,13 +202,17 @@
 	                          var text = "";
 	                          if (array.length == 0){
 															text += "Ни один чекбокс не выбран";
-															$('.button').css('background-color', '#f2f2f2');
+															$('#text-copy').css('background-color', '#f2f2f2');
 														}
 	                          for (var i = 0; i < array.length; i++) {
 	                              text += "* " + array[i] + " <br />";
 	                          }
 	                          $(".values").html(text);
 	                      }
+
+												$('#restart-page').click(function() {
+												   location.reload();
+												});
 
 	</script>
 </body>
