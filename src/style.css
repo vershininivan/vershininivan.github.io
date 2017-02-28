@@ -12,6 +12,10 @@ body {
 	margin: 0;
 	font-family: "Yandex-Sans";
 }
+a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+	color: black;
+} 
 #grid{
 	padding: 1px 55px;
 }
@@ -142,6 +146,51 @@ button {
 	border-left: 15px solid #ffdb4d;
 }
 
+.navbar-logo-android {
+    content: "";
+    display: inline-block;
+    width: 140px;
+    height: 44px;
+	padding: 0 5px 0 5px;
+    display: table-cell;
+  	vertical-align: middle;
+  	text-align: center;
+    background: #97d17d; 
+    font-size: 24px;
+	font-weight: bold;
+}
+
+.navbar-logo-android::after{
+	content: '';
+    position: absolute;
+	top:0; /* Абсолютное позиционирование*/
+    left: 300px; /*bottom: -20px; /* Положение треугольника */
+    border: 22px solid transparent;
+	border-left: 15px solid #97d17d;
+}
+
+.navbar-logo-ios {
+    content: "";
+    display: inline-block;
+    width: 140px;
+    height: 44px;
+	padding: 0 5px 0 5px;
+    display: table-cell;
+  	vertical-align: middle;
+  	text-align: center;
+    background: #75c4e6; 
+    font-size: 24px;
+	font-weight: bold;
+}
+
+.navbar-logo-ios::after{
+	content: '';
+    position: absolute;
+	top:0; /* Абсолютное позиционирование  97d17d 75c4e6*/
+    left: 450px; /*bottom: -20px; /* Положение треугольника */
+    border: 22px solid transparent;
+	border-left: 15px solid #75c4e6;
+}
 .footer{
 	margin: 10px;
 	margin-left: 0;
