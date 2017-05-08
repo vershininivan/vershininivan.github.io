@@ -37,7 +37,7 @@ var arrayDeviceIsUsed = [];
 
 window.onload = function () {
     $(document).ready(function () {
-        $.getJSON("js/devices.json", function (arrayDevice) {
+        $.getJSON("src/devices.json", function (arrayDevice) {
 
             //var arrayDevice = JSON.parse(deviceList);
 
