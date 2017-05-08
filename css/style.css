@@ -191,6 +191,30 @@ button {
     border: 22px solid transparent;
 	border-left: 15px solid #75c4e6;
 }
+
+.navbar-logo-devices {
+    content: "";
+    display: inline-block;
+    width: 140px;
+    height: 44px;
+	padding: 0 5px 0 5px;
+    display: table-cell;
+  	vertical-align: middle;
+  	text-align: center;
+    background: #42aaff; 
+    font-size: 24px;
+	font-weight: bold;
+}
+
+.navbar-logo-devices::after{
+	content: '';
+    position: absolute;
+	top:0; /* Абсолютное позиционирование  97d17d 75c4e6*/
+    left: 300px; /*bottom: -20px; /* Положение треугольника */
+    border: 22px solid transparent;
+	border-left: 15px solid #42aaff;
+}
+
 .footer{
 	margin: 10px;
 	margin-left: 0;
