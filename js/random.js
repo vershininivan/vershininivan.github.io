@@ -93,7 +93,7 @@ window.onload = function () {
             }
 
             function fullDeviceName() {
-                arrayFullDeviceName = arrayDevice.devices[i].factory + arrayDevice.devices[i].model + " (" + arrayDevice.devices[i].osVersionFull + ")";
+                arrayFullDeviceName = arrayDevice.devices[i].factory + " " + arrayDevice.devices[i].model + " (" + arrayDevice.devices[i].osVersionFull + ")";
                 return arrayFullDeviceName;
             }
 
