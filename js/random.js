@@ -1,5 +1,4 @@
-var counterPad = 0;
-var counterPhone = 0;
+
 
 var arrayListPhone4x = [];
 var arrayListPhone5x = [];
