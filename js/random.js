@@ -105,26 +105,26 @@ window.onload = function () {
             }
 
             for (var i = 1; i < arrayListPhone6x.length; i += 2) {
-                stringListPhone6x += htmlListFirst + arrayListPhone6x[i - 1] + htmlListFirst2 + htmlListMiddle + arrayListPhone6x[i] + htmlListLast;
+                stringListPhone6x += htmlListFirst + arrayListPhone6x[i - 1] + htmlListFirst2 + arrayListPhone6x[i] + htmlListMiddle + arrayListPhone6x[i] + htmlListLast;
             }
 
             for (var i = 1; i < arrayListPhone7x.length; i += 2) {
-                stringListPhone7x += htmlListFirst + arrayListPhone7x[i - 1] + htmlListFirst2 + htmlListMiddle + arrayListPhone7x[i] + htmlListLast;
+                stringListPhone7x += htmlListFirst + arrayListPhone7x[i - 1] + htmlListFirst2 + arrayListPhone6x[i] + htmlListMiddle + arrayListPhone7x[i] + htmlListLast;
             }
 
             for (var i = 1; i < arrayListPad4x.length; i += 2) {
-                stringListPad4x += htmlListFirst + arrayListPad4x[i - 1] + htmlListFirst2 + htmlListMiddle + arrayListPad4x[i] + htmlListLast;
+                stringListPad4x += htmlListFirst + arrayListPad4x[i - 1] + htmlListFirst2 + arrayListPad4x[i] + htmlListMiddle + arrayListPad4x[i] + htmlListLast;
             }
 
             for (var i = 1; i < arrayListPad5x.length; i += 2) {
-                stringListPad5x += htmlListFirst + arrayListPad5x[i - 1] + htmlListFirst2 + htmlListMiddle + arrayListPad5x[i] + htmlListLast;
+                stringListPad5x += htmlListFirst + arrayListPad5x[i - 1] + htmlListFirst2 + arrayListPad5x[i] + htmlListMiddle + arrayListPad5x[i] + htmlListLast;
             }
 
             for (var i = 1; i < arrayListPad6x.length; i += 2) {
-                stringListPad6x += htmlListFirst + arrayListPad6x[i - 1] + htmlListFirst2 + htmlListMiddle + arrayListPad6x[i] + htmlListLast;
+                stringListPad6x += htmlListFirst + arrayListPad6x[i - 1] + htmlListFirst2 + arrayListPad6x[i] + htmlListMiddle + arrayListPad6x[i] + htmlListLast;
             }
             for (var i = 1; i < arrayListPad7x.length; i += 2) {
-                stringListPad7x += htmlListFirst + arrayListPad7x[i - 1] + htmlListFirst2 + htmlListMiddle + arrayListPad7x[i] + htmlListLast;
+                stringListPad7x += htmlListFirst + arrayListPad7x[i - 1] + htmlListFirst2 + arrayListPad7x[i] + htmlListMiddle + arrayListPad7x[i] + htmlListLast;
             }
 
             $(".listPhone4x").html(stringListPhone4x);

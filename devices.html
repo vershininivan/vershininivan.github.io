@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Copy Paste Devices</title>
+    <link href="css/devices.css" rel="stylesheet">
+    <!--<script src="js/salvattore.min.js"></script>-->
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/png">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About me</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="openNav">
+        <div class="icon"></div>
+    </div>
+    <!-- END навигация -->
+
+    <div class="wrapper">
+
+        <section>
+
+            <div class="line">
+                <h2>[Device List] Выберите девайсы:</h2>
+            </div>
+
+            <p class="arrows">
+            <a href="#" id="prev" class="btn play" onclick="notifyMe()"><span><span class="s1"></span><span class="s2"></span><span class="s3"></span></span></a>
+            <a href="#" id="next" class="btn close" onclick="clearCheckBox()"><span><span class="s1"></span><span class="s2"></span><span class="s3"></span></span></a>
+        </p>
+            <!-- -->
+
+            <!-- Генерация списка девайсов -->
+            <article>
+                <form class="row">
+                    <div class="col25">
+                        <fieldset>
+                            <h3>Phone 4.x</h3>
+                            <div class="listPhone4x">Phone 4.x</div>
+                        </fieldset>
+                        <fieldset>
+                            <h3>Phone 6.x</h3>
+                            <div class="listPhone6x">Phone 6.x</div>
+                        </fieldset>
+                    </div>
+                    <div class="col25">
+                        <fieldset>
+                            <h3>Phone 5.x</h3>
+                            <div class="listPhone5x">Phone 5.x</div>
+                        </fieldset>
+                        <fieldset>
+                            <h3>Phone 7.x</h3>
+                            <div class="listPhone7x">Phone 7.x</div>
+                        </fieldset>
+                    </div>
+                    <div class="col25">
+                        <fieldset>
+                            <h3>Pad 4.x</h3>
+                            <div class="listPad4x">Pad 4.x</div>
+                        </fieldset>
+                        <fieldset>
+                            <h3>Pad 6.x</h3>
+                            <div class="listPad6x">Pad 6.x</div>
+                        </fieldset>
+                    </div>
+                    <div class="col25">
+                        <fieldset>
+                            <h3>Pad 5.x</h3>
+                            <div class="listPad5x">Pad 5.x</div>
+                        </fieldset>
+                        <fieldset>
+                            <h3>Pad 7.x</h3>
+                            <div class="listPad7x">Pad 7.x</div>
+                        </fieldset>
+                    </div>
+                </form>
+            </article>
+            <!-- END Генерация списка девайсов -->
+
+            <!-- Вывод списка девайсов -->
+            <!--            <div class="line">
+                <h2>[Device List] Выберите девайсы:</h2>
+            </div>
+
+            <article>
+                <form class="row">
+                    <div class="col100">
+                        <fieldset>
+                            <h3>Вывод списка девайсов:</h3>
+                            <div class="values" id="bar">Ни один чекбокс не выбран</div>
+                        </fieldset>
+                    </div>
+                </form>
+            </article>-->
+            <!-- END Вывод списка девайсов -->
+
+            <!-- Копирование списка девайсов в буфер обмена -->
+            <!--            <button class="button" data-clipboard-action="copy" data-clipboard-target="#bar" id="text-copy">Скопировать</button>
+            <button class="button" onclick="checkBoxClear()">Снять выбор</button>-->
+            <!-- END Копирование списка девайсов в буфер обмена -->
+
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/clipboard.min.js"></script>
+            <script src="js/devices.js"></script>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
