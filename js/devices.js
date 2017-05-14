@@ -198,7 +198,7 @@ function notifyMe() {
         // Если все в порядке, то создадим уведомление
         var notification = new Notification('Уведомление HTML5', {
             lang: 'ru-RU',
-            body: text,
+            body: 'text',
             icon: 'src/favicon.ico'
         });
     }
