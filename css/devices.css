@@ -6,7 +6,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     background-color: #eeeeee;
-    color: #949494;
+    color: black;
 }
 
 * {
@@ -19,19 +19,27 @@ h1 {
 }
 
 article {
-    padding: 1em 3em;
+    padding: 0.5em 3em;
     overflow: hidden;
+    margin: 0 0 0 auto;
 }
 
-p.arrows {
+.arrows {
+    padding: 0em 3em;
     text-align: left;
     margin: 0 0 0.5em 0;
     transition: all 0.5s ease;
+    
 }
 
-p.arrows .btn {
+.arrows .btn {
+    display: inline-block;
     margin: 0.2em;
+/*    bottom: -2em;*/
+    margin-top: -5em;
+/*    margin-right: -3em;*/
 }
+
 
 body.small p.arrows {
     margin-right: -0.8em;
@@ -60,8 +68,8 @@ label input {
 
 fieldset {
     border: 0;
-    margin: 0 0 2em 0;
-    padding: 1em;
+    margin: 0 0 1em 0;
+    padding: 1em 0 1em 1em;
     background-color: #f7f7f7;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -127,25 +135,27 @@ header > h1 {
     margin: 0;
 }*/
 
-.line {
-    background-color: #3f51b5;
+header {
+    background-color: #ffdb4d;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    color: #FFF;
+    color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     position: relative;
-    height: 50px;
+    height: 3em;
 }
 
-.line > h2 {
+header > h2 {
     margin: 0 0 0 50px;
 }
 
 header > .btn {
-    position: absolute;
-    bottom: -2em;
-    right: 3em;
-    font-size: 1.5em;
+    display: inline-block;
+    /*position: absolute;*/
+    /*bottom: -2em;*/
+    right: 1em;
+    font-size: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-right: 0.8em;
 }
 
 body.small header > .btn {
@@ -516,15 +526,15 @@ header.amber .btn span span {
     transition-duration: 0.5s;
     transition-timing-function: swing;
     background-color: white;
-    width: 100%;
-    height: 100%;
+/*    width: 100%;
+    height: 100%;*/
     position: relative;
     /*padding: 100px 40px;*/
 }
 
 .wrapper.open {
-    transform: translateX(250px) translateY(50px);
-    -webkit-transform: translateX(250px) translateY(50px);
+    transform: translateX(200px) translateY(25px);
+    -webkit-transform: translateX(200px) translateY(25px);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -551,9 +561,9 @@ header.amber .btn span span {
 .openNav {
     transition-duration: 0.5s;
     transition-timing-function: swing;
-    width: 50px;
-    height: 50px;
-    background-color: #14B9FF;
+    width: 3em;
+    height: 3em;
+    background-color: #ffdb4d; /*ffdb4d 14B9FF*/
     position: fixed;
     /*    top: 20px;
     left: 20px;*/
@@ -569,14 +579,14 @@ header.amber .btn span span {
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: white;
-    top: 24px;
-    left: 10px;
+    background-color: black;
+    top: 1.5em;
+    left: 0.5em;
 }
 
 .openNav .icon:before, .openNav .icon:after {
     transition-duration: 0.5s;
-    background-color: white;
+    background-color: black;
     position: absolute;
     content: "";
     width: 30px;
@@ -593,8 +603,8 @@ header.amber .btn span span {
 }
 
 .openNav.open {
-    transform: translateX(250px) translateY(50px);
-    -webkit-transform: translateX(250px) translateY(50px);
+    transform: translateX(200px) translateY(25px);
+    -webkit-transform: translateX(200px) translateY(25px);
 }
 
 .openNav.open .icon {
@@ -616,7 +626,7 @@ header.amber .btn span span {
 }
 
 nav {
-    background-color: #14B9FF;
+    background-color: #ffdb4d;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -625,8 +635,8 @@ nav {
 }
 
 nav ul {
-    width: 250px;
-    margin-top: 50px;
+    width: 200px;
+    margin-top: 25px;
 }
 
 nav ul:hover li {
@@ -637,12 +647,12 @@ nav ul li {
     transition-duration: 0.25s;
     display: block;
     padding: 5px 40px;
-    color: white;
+    color: black;
     letter-spacing: 0.02em;
     text-align: right;
 }
 
 nav ul li:hover {
     cursor: pointer;
-    color: white;
+    color: black;
 }

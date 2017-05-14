@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Copy Paste Devices</title>
+    <title>Copy-Paste Devices</title>
     <link href="css/devices.css" rel="stylesheet">
     <!--<script src="js/salvattore.min.js"></script>-->
     <link rel="shortcut icon" href="src/favicon.ico" type="image/png">
@@ -28,15 +28,16 @@
 
         <section>
 
-            <div class="line">
+            <header>
                 <h2>[Device List] Выберите девайсы:</h2>
+                <!--                <a href="#" class="btn play" data-clipboard-action="copy" data-clipboard-target="#bar" id="text-copy"><span><span class="s1"></span><span class="s2"></span><span class="s3"></span></span></a>
+                <a href="#" id="next" class="btn close" onclick="clearCheckBox()"><span><span class="s1"></span><span class="s2"></span><span class="s3"></span></span></a>-->
+            </header>
+            <div class="arrows">
+                <a href="#" class="btn checked" data-clipboard-action="copy" data-clipboard-target="#bar" id="text-copy"><span><span class="s1"></span><span class="s2"></span><span class="s3"></span></span></a>
+                <a href="#" id="next" class="btn close" onclick="clearCheckBox()"><span><span class="s1"></span><span class="s2"></span><span class="s3"></span></span></a>
             </div>
-
-            <p class="arrows">
-            <a href="#" id="prev" class="btn play" onclick="notifyMe()"><span><span class="s1"></span><span class="s2"></span><span class="s3"></span></span></a>
-            <a href="#" id="next" class="btn close" onclick="clearCheckBox()"><span><span class="s1"></span><span class="s2"></span><span class="s3"></span></span></a>
-        </p>
-            <!-- -->
+            <!-- id="prev"  -->
 
             <!-- Генерация списка девайсов -->
             <article>
@@ -86,9 +87,9 @@
             <!-- END Генерация списка девайсов -->
 
             <!-- Вывод списка девайсов -->
-            <!--            <div class="line">
+            <header>
                 <h2>[Device List] Выберите девайсы:</h2>
-            </div>
+            </header>
 
             <article>
                 <form class="row">
@@ -99,7 +100,7 @@
                         </fieldset>
                     </div>
                 </form>
-            </article>-->
+            </article>
             <!-- END Вывод списка девайсов -->
 
             <!-- Копирование списка девайсов в буфер обмена -->
@@ -107,10 +108,12 @@
             <button class="button" onclick="checkBoxClear()">Снять выбор</button>-->
             <!-- END Копирование списка девайсов в буфер обмена -->
 
+
+            <!-- Инициализация скриптов -->
             <script src="js/jquery-3.2.1.min.js"></script>
             <script src="js/clipboard.min.js"></script>
             <script src="js/devices.js"></script>
-
+            <!-- END ВИнициализация скриптов -->
         </section>
 
     </div>
