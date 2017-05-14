@@ -217,7 +217,18 @@ function notifyMe() {
                     body: 'Здесь какой-то контент уведомления...',
                     icon: 'src/favicon.ico'
                 });
+
+                callNotificationTimer()
             }
         });
     }
+}
+
+
+function callNotificationTimer() {
+    window.setTimeout(closeNotification, 5);
+}
+
+function closeNotification() {
+    Notification.close()
 }
