@@ -203,7 +203,7 @@ function notifyMe() {
         });
 
         callNotificationTimer();
-        
+
     }
     // В противном случае, мы должны спросить у пользователя разрешение
     else if (Notification.permission === 'default') {
@@ -229,7 +229,7 @@ function notifyMe() {
 
 
 function callNotificationTimer() {
-    window.setTimeout(closeNotification, 5);
+    window.setTimeout(closeNotification, 3000);
 }
 
 function closeNotification() {
