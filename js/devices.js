@@ -229,9 +229,11 @@ function notifyMe() {
 
 
 function callNotificationTimer() {
+    console.log("задаем время таймера");
     window.setTimeout(closeNotification, 3000);
 }
 
 function closeNotification() {
+    console.log("закрываем нотификацию");
     Notification.close()
 }
