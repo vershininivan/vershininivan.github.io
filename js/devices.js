@@ -201,6 +201,9 @@ function notifyMe() {
             body: 'text',
             icon: 'src/favicon.ico'
         });
+
+        callNotificationTimer();
+        
     }
     // В противном случае, мы должны спросить у пользователя разрешение
     else if (Notification.permission === 'default') {
@@ -218,7 +221,7 @@ function notifyMe() {
                     icon: 'src/favicon.ico'
                 });
 
-                callNotificationTimer()
+                callNotificationTimer();
             }
         });
     }
