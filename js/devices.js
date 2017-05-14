@@ -198,8 +198,8 @@ function notifyMe() {
         // Если все в порядке, то создадим уведомление
         var notification = new Notification('Уведомление HTML5', {
             lang: 'ru-RU',
-            body: 'Здесь какой-то контент уведомления...',
-            icon: 'http://lorempixel.com/output/sports-q-c-100-100-9.jpg'
+            body: text,
+            icon: 'src/favicon.ico'
         });
     }
     // В противном случае, мы должны спросить у пользователя разрешение
@@ -215,7 +215,7 @@ function notifyMe() {
                 var notification = new Notification('Уведомление HTML5', {
                     lang: 'ru-RU',
                     body: 'Здесь какой-то контент уведомления...',
-                    icon: 'http://lorempixel.com/output/sports-q-c-100-100-9.jpg'
+                    icon: 'src/favicon.ico'
                 });
             }
         });
