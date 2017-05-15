@@ -671,7 +671,7 @@
       "model": "GALAXY Tab 2 3G (GT-P3100)",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "bullShit": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
