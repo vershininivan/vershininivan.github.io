@@ -27,10 +27,10 @@ var htmlListLast = '</span></label></div>';
 
 var arrayPhoneNotUsedModern = [];
 var arrayPhoneNotUsedClassic = [];
-var arrayPadNotUsedModermTabletSettind = [];
-var arrayPadNotUsedClassicPhoneSettind = [];
-var arrayPadNotUsedModermPhoneSettind = [];
-var arrayPadNotUsedClassicTabletSettind = [];
+var arrayPadNotUsedModermTabletSettings = [];
+var arrayPadNotUsedClassicPhoneSettings = [];
+var arrayPadNotUsedModermPhoneSettings = [];
+var arrayPadNotUsedClassicTabletSettings = [];
 
 var arrayDeviceIsUsed = [];
 
@@ -178,16 +178,16 @@ function arrayDeviceNotUsed() {
             arrayPhoneNotUsedClassic.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
         if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != false & arrayDeviceIsUsed.devices[i].osVersionShort > 4 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
-            arrayPadNotUsedModermTabletSettind.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
+            arrayPadNotUsedModermTabletSettings.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
         if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != true & arrayDeviceIsUsed.devices[i].osVersionShort < 5 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
-            arrayPadNotUsedClassicPhoneSettind.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
+            arrayPadNotUsedClassicPhoneSettings.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
         if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != true & arrayDeviceIsUsed.devices[i].osVersionShort > 4 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
-            arrayPadNotUsedModermPhoneSettind.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
+            arrayPadNotUsedModermPhoneSettings.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
         if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != false & arrayDeviceIsUsed.devices[i].osVersionShort < 5 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
-            arrayPadNotUsedClassicTabletSettind.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
+            arrayPadNotUsedClassicTabletSettings.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
     }
 }
@@ -202,10 +202,10 @@ function randomEverything() {
 
     arrayPhoneNotUsedModern.sort(compareRandom);
     arrayPhoneNotUsedClassic.sort(compareRandom);
-    arrayPadNotUsedModermTabletSettind.sort(compareRandom);
-    arrayPadNotUsedClassicPhoneSettind.sort(compareRandom);
-    arrayPadNotUsedModermPhoneSettind.sort(compareRandom);
-    arrayPadNotUsedClassicTabletSettind.sort(compareRandom);
+    arrayPadNotUsedModermTabletSettings.sort(compareRandom);
+    arrayPadNotUsedClassicPhoneSettings.sort(compareRandom);
+    arrayPadNotUsedModermPhoneSettings.sort(compareRandom);
+    arrayPadNotUsedClassicTabletSettings.sort(compareRandom);
 
     var text_1 = text_2 = text_3 = "";
 
@@ -224,32 +224,32 @@ function randomEverything() {
         }
     }
 
-    if (arrayPadNotUsedModermTabletSettind.length < arrayPadNotUsedClassicPhoneSettind.length) {
-        for (var i = 0; i < arrayPadNotUsedModermTabletSettind.length; i++) {
-            text_2 += arrayPadNotUsedModermTabletSettind[i] + " <br />";
-            text_2 += arrayPadNotUsedClassicPhoneSettind[i] + " <br />";
+    if (arrayPadNotUsedModermTabletSettings.length < arrayPadNotUsedClassicPhoneSettings.length) {
+        for (var i = 0; i < arrayPadNotUsedModermTabletSettings.length; i++) {
+            text_2 += arrayPadNotUsedModermTabletSettings[i] + " <br />";
+            text_2 += arrayPadNotUsedClassicPhoneSettings[i] + " <br />";
             text_2 += " <br />";
         }
     }
     else {
-        for (var i = 0; i < arrayPadNotUsedClassicPhoneSettind.length; i++) {
-            text_2 += arrayPadNotUsedModermTabletSettind[i] + " <br />";
-            text_2 += arrayPadNotUsedClassicPhoneSettind[i] + " <br />";
+        for (var i = 0; i < arrayPadNotUsedClassicPhoneSettings.length; i++) {
+            text_2 += arrayPadNotUsedModermTabletSettings[i] + " <br />";
+            text_2 += arrayPadNotUsedClassicPhoneSettings[i] + " <br />";
             text_2 += " <br />";
         }
     }
 
-    if (arrayPadNotUsedModermPhoneSettind.length < arrayPadNotUsedClassicTabletSettind.length) {
-        for (var i = 0; i < arrayPadNotUsedModermPhoneSettind.length; i++) {
-            text_3 += arrayPadNotUsedModermPhoneSettind[i] + " <br />";
-            text_3 += arrayPadNotUsedClassicTabletSettind[i] + " <br />";
+    if (arrayPadNotUsedModermPhoneSettings.length < arrayPadNotUsedClassicTabletSettings.length) {
+        for (var i = 0; i < arrayPadNotUsedModermPhoneSettings.length; i++) {
+            text_3 += arrayPadNotUsedModermPhoneSettings[i] + " <br />";
+            text_3 += arrayPadNotUsedClassicTabletSettings[i] + " <br />";
             text_3 += " <br />";
         }
     }
     else {
-        for (var i = 0; i < arrayPadNotUsedClassicTabletSettind.length; i++) {
-            text_3 += arrayPadNotUsedModermPhoneSettind[i] + " <br />";
-            text_3 += arrayPadNotUsedClassicTabletSettind[i] + " <br />";
+        for (var i = 0; i < arrayPadNotUsedClassicTabletSettings.length; i++) {
+            text_3 += arrayPadNotUsedModermPhoneSettings[i] + " <br />";
+            text_3 += arrayPadNotUsedClassicTabletSettings[i] + " <br />";
             text_3 += " <br />";
         }
     }
@@ -260,10 +260,10 @@ function randomEverything() {
 
     arrayPhoneNotUsedModern = [];
     arrayPhoneNotUsedClassic = [];
-    arrayPadNotUsedModermTabletSettind = [];
-    arrayPadNotUsedClassicPhoneSettind = [];
-    arrayPadNotUsedModermPhoneSettind = [];
-    arrayPadNotUsedClassicTabletSettind = [];
+    arrayPadNotUsedModermTabletSettings = [];
+    arrayPadNotUsedClassicPhoneSettings = [];
+    arrayPadNotUsedModermPhoneSettings = [];
+    arrayPadNotUsedClassicTabletSettings = [];
 
 }
 
