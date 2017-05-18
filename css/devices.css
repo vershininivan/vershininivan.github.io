@@ -532,8 +532,8 @@ header.amber .btn span span {
 }
 
 .wrapper.open {
-    transform: translateX(200px) translateY(25px);
-    -webkit-transform: translateX(200px) translateY(25px);
+    transform: translateX(200px) /*translateY(25px)*/;
+    -webkit-transform: translateX(200px) /*translateY(25px)*/;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -603,8 +603,8 @@ header.amber .btn span span {
 }
 
 .openNav.open {
-    transform: translateX(200px) translateY(25px);
-    -webkit-transform: translateX(200px) translateY(25px);
+    transform: translateX(200px) /*/*translateY(25px)*/;
+    -webkit-transform: translateX(200px) /*/*translateY(25px)*/;
 }
 
 .openNav.open .icon {
