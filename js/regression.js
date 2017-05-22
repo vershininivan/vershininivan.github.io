@@ -1,0 +1,5 @@
+var regressionList = '{"version":1,"regressionList":[{"id":0,"reliseNumber":1,"reliseCodeName":0,"features":{"fearute1":{"apad":{"time1":1},"aphone":{"time1":1}},"fearute2":{"apad":{"time1":1},"aphone":{"time1":1}},"fearute3":{"apad":{"time1":1},"aphone":{"time1":1}},"fearute4":{"apad":{"time1":1},"aphone":{"time1":1}},"fearute5":{"apad":{"time1":1},"aphone":{"time1":1}}}},{"id":1,"reliseNumber":2,"reliseCodeName":0,"features":{"fearute1":{"apad":{"time1":1},"aphone":{"time1":1}},"fearute2":{"apad":{"time1":1},"aphone":{"time1":1}},"fearute3":{"apad":{"time1":1},"aphone":{"time1":1}},"fearute4":{"apad":{"time1":1},"aphone":{"time1":1}},"fearute5":{"apad":{"time1":1},"aphone":{"time1":1}}}}]}';
+
+var regressionListParse = JSON.parse(regressionList);
+
+console.log(regressionListParse.regressionList.length);

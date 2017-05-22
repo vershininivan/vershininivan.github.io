@@ -4,7 +4,7 @@
     {
       "id": 0,
       "platform": "phone",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "GALAXY S5 mini",
       "osVersionFull": "6.0",
       "osVersionShort": "6",
@@ -38,7 +38,7 @@
     {
       "id": 2,
       "platform": "phone",
-      "factory": "Alcatel ",
+      "factory": "Alcatel",
       "model": "ONE Touch 5036D",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
@@ -55,7 +55,7 @@
     {
       "id": 3,
       "platform": "phone",
-      "factory": "Sony ",
+      "factory": "Sony",
       "model": "Xperia Z2",
       "osVersionFull": "6.0.1",
       "osVersionShort": "6",
@@ -72,7 +72,7 @@
     {
       "id": 4,
       "platform": "phone",
-      "factory": "LG ",
+      "factory": "LG",
       "model": "Optimus L7 (LG-P705)",
       "osVersionFull": "CM(4.4.4)",
       "osVersionShort": "CM(4.4.4)",
@@ -89,7 +89,7 @@
     {
       "id": 5,
       "platform": "phone",
-      "factory": "Huawei ",
+      "factory": "Huawei",
       "model": "Nexus 6P",
       "osVersionFull": "7.1.2",
       "osVersionShort": "7",
@@ -106,7 +106,7 @@
     {
       "id": 6,
       "platform": "phone",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy S3 Duos",
       "osVersionFull": "4.4.4",
       "osVersionShort": "4",
@@ -123,7 +123,7 @@
     {
       "id": 7,
       "platform": "phone",
-      "factory": "LG ",
+      "factory": "LG",
       "model": "G3 (D855)",
       "osVersionFull": "5.0",
       "osVersionShort": "5",
@@ -140,7 +140,7 @@
     {
       "id": 8,
       "platform": "phone",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy Grand Prime Duos",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
@@ -157,7 +157,7 @@
     {
       "id": 9,
       "platform": "phone",
-      "factory": "Xiaomi ",
+      "factory": "Xiaomi",
       "model": "MI 4c",
       "osVersionFull": "5.1",
       "osVersionShort": "5",
@@ -174,7 +174,7 @@
     {
       "id": 10,
       "platform": "phone",
-      "factory": "Huawei ",
+      "factory": "Huawei",
       "model": "MediaPad X2",
       "osVersionFull": "5.0",
       "osVersionShort": "5",
@@ -191,7 +191,7 @@
     {
       "id": 11,
       "platform": "phone",
-      "factory": "ZTE ",
+      "factory": "ZTE",
       "model": "Blade L2",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
@@ -208,7 +208,7 @@
     {
       "id": 12,
       "platform": "phone",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy S4 mini LTE (I9195)",
       "osVersionFull": "4.4.4",
       "osVersionShort": "4",
@@ -225,7 +225,7 @@
     {
       "id": 13,
       "platform": "phone",
-      "factory": "ZTE ",
+      "factory": "ZTE",
       "model": "Blade AF3 4",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -242,7 +242,7 @@
     {
       "id": 14,
       "platform": "phone",
-      "factory": "Dexp ",
+      "factory": "Dexp",
       "model": "IXION ES150",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -259,7 +259,7 @@
     {
       "id": 15,
       "platform": "phone",
-      "factory": "Lenovo ",
+      "factory": "Lenovo",
       "model": "A319",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -276,7 +276,7 @@
     {
       "id": 16,
       "platform": "phone",
-      "factory": "Lenovo ",
+      "factory": "Lenovo",
       "model": "A536",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -310,7 +310,7 @@
     {
       "id": 18,
       "platform": "phone",
-      "factory": "HTC ",
+      "factory": "HTC",
       "model": "One M9",
       "osVersionFull": "6.0",
       "osVersionShort": "6",
@@ -327,7 +327,7 @@
     {
       "id": 19,
       "platform": "phone",
-      "factory": "FLY ",
+      "factory": "Fly",
       "model": "Cirrus 2 (FS504)",
       "osVersionFull": "5.1",
       "osVersionShort": "5",
@@ -344,7 +344,7 @@
     {
       "id": 20,
       "platform": "phone",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy S7 (SM-G930)",
       "osVersionFull": "7.0",
       "osVersionShort": "7",
@@ -361,7 +361,7 @@
     {
       "id": 21,
       "platform": "phone",
-      "factory": "Xiaomi ",
+      "factory": "Xiaomi",
       "model": "Mi5",
       "osVersionFull": "6.0.1",
       "osVersionShort": "6",
@@ -395,7 +395,7 @@
     {
       "id": 23,
       "platform": "phone",
-      "factory": "Asus ",
+      "factory": "Asus",
       "model": "Zenfone 2 ZE551ML",
       "osVersionFull": "5.0",
       "osVersionShort": "5",
@@ -429,7 +429,7 @@
     {
       "id": 25,
       "platform": "phone",
-      "factory": "Xiaomi ",
+      "factory": "Xiaomi",
       "model": "Redmi 3",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
@@ -446,7 +446,7 @@
     {
       "id": 26,
       "platform": "phone",
-      "factory": "Explay ",
+      "factory": "Explay",
       "model": "N1",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
@@ -463,7 +463,7 @@
     {
       "id": 27,
       "platform": "phone",
-      "factory": "Fly ",
+      "factory": "Fly",
       "model": "IQ 4407",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
@@ -480,7 +480,7 @@
     {
       "id": 28,
       "platform": "phone",
-      "factory": "YotaPhone ",
+      "factory": "YotaPhone",
       "model": "C9660",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
@@ -497,7 +497,7 @@
     {
       "id": 29,
       "platform": "phone",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Nexus S",
       "osVersionFull": "4.1.2",
       "osVersionShort": "4",
@@ -514,7 +514,7 @@
     {
       "id": 30,
       "platform": "phone",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy S2 (GT-I9100)",
       "osVersionFull": "4.1.2",
       "osVersionShort": "4",
@@ -531,7 +531,7 @@
     {
       "id": 31,
       "platform": "phone",
-      "factory": "Huawei ",
+      "factory": "Huawei",
       "model": "P7 mini",
       "osVersionFull": "4.3",
       "osVersionShort": "4",
@@ -548,7 +548,7 @@
     {
       "id": 32,
       "platform": "phone",
-      "factory": "Explay ",
+      "factory": "Explay",
       "model": "Alto",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
@@ -565,7 +565,7 @@
     {
       "id": 33,
       "platform": "phone",
-      "factory": "Sony ",
+      "factory": "Sony",
       "model": "Xperia XZ (F8332) Dual Mineral Black",
       "osVersionFull": "7.0",
       "osVersionShort": "7",
@@ -582,7 +582,7 @@
     {
       "id": 34,
       "platform": "phone",
-      "factory": "LG ",
+      "factory": "LG",
       "model": "G5 SE (H845) Gold",
       "osVersionFull": "6.0.1",
       "osVersionShort": "6",
@@ -599,7 +599,7 @@
     {
       "id": 35,
       "platform": "phone",
-      "factory": "LG ",
+      "factory": "LG",
       "model": "Nexus 5X (H791)",
       "osVersionFull": "7.1.2",
       "osVersionShort": "7",
@@ -616,7 +616,7 @@
     {
       "id": 36,
       "platform": "pad",
-      "factory": "Sony ",
+      "factory": "Sony",
       "model": "Xperia Z2 Tablet",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
@@ -633,7 +633,7 @@
     {
       "id": 37,
       "platform": "pad",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy Tab 4 (SM-T231) ",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -650,7 +650,7 @@
     {
       "id": 38,
       "platform": "pad",
-      "factory": "Asus ",
+      "factory": "Asus",
       "model": "Nexus 7 ",
       "osVersionFull": "4.4.4",
       "osVersionShort": "4",
@@ -667,11 +667,11 @@
     {
       "id": 39,
       "platform": "pad",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "GALAXY Tab 2 3G (GT-P3100)",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "bullShit": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -684,7 +684,7 @@
     {
       "id": 40,
       "platform": "pad",
-      "factory": "Lenovo ",
+      "factory": "Lenovo",
       "model": "Tab 2 A8-50LC",
       "osVersionFull": "5.0",
       "osVersionShort": "5",
@@ -718,7 +718,7 @@
     {
       "id": 42,
       "platform": "pad",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy Note 10.1",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -735,7 +735,7 @@
     {
       "id": 43,
       "platform": "pad",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy Note Pro 12.2",
       "osVersionFull": "5.0.2",
       "osVersionShort": "5",
@@ -752,7 +752,7 @@
     {
       "id": 44,
       "platform": "pad",
-      "factory": "HTC ",
+      "factory": "HTC",
       "model": "Nexus 9 LTE",
       "osVersionFull": "7.1",
       "osVersionShort": "7",
@@ -769,7 +769,7 @@
     {
       "id": 45,
       "platform": "pad",
-      "factory": "Digma ",
+      "factory": "Digma",
       "model": "Hit LTE",
       "osVersionFull": "5.1",
       "osVersionShort": "5",
@@ -786,7 +786,7 @@
     {
       "id": 46,
       "platform": "pad",
-      "factory": "LG ",
+      "factory": "LG",
       "model": "G Pad V490",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -803,7 +803,7 @@
     {
       "id": 47,
       "platform": "pad",
-      "factory": "Digma ",
+      "factory": "Digma",
       "model": "Optima Prime 3G",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -820,7 +820,7 @@
     {
       "id": 48,
       "platform": "pad",
-      "factory": "Prestigio ",
+      "factory": "Prestigio",
       "model": "MultiPad Wize 3087 3G",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -837,7 +837,7 @@
     {
       "id": 49,
       "platform": "pad",
-      "factory": "Lenovo ",
+      "factory": "Lenovo",
       "model": "TAB 2 A10-70",
       "osVersionFull": "4.4.4",
       "osVersionShort": "4",
@@ -854,7 +854,7 @@
     {
       "id": 50,
       "platform": "pad",
-      "factory": "Asus ",
+      "factory": "Asus",
       "model": "ZenPad 10 (Z300CG)",
       "osVersionFull": "5.0.2",
       "osVersionShort": "5",
@@ -905,7 +905,7 @@
     {
       "id": 53,
       "platform": "pad",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy Tab A (SM-T555)",
       "osVersionFull": "5.0.2",
       "osVersionShort": "5",
@@ -922,7 +922,7 @@
     {
       "id": 54,
       "platform": "pad",
-      "factory": "Lenovo ",
+      "factory": "Lenovo",
       "model": "Yoga Tablet 3 10 (YT3-X50M)",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
@@ -939,7 +939,7 @@
     {
       "id": 55,
       "platform": "pad",
-      "factory": "Sony ",
+      "factory": "Sony",
       "model": "Xperia Tablet Z4",
       "osVersionFull": "7.0",
       "osVersionShort": "7",
@@ -956,7 +956,7 @@
     {
       "id": 56,
       "platform": "pad",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy Tab S2 (SM-T719)",
       "osVersionFull": "6.0.1",
       "osVersionShort": "6",
@@ -973,7 +973,7 @@
     {
       "id": 57,
       "platform": "pad",
-      "factory": "Lenovo ",
+      "factory": "Lenovo",
       "model": "TAB 2 A7-30DC",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -990,7 +990,7 @@
     {
       "id": 58,
       "platform": "pad",
-      "factory": "IRBIS ",
+      "factory": "IRBIS",
       "model": "TX22",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -1007,7 +1007,7 @@
     {
       "id": 59,
       "platform": "pad",
-      "factory": "Motorola ",
+      "factory": "Motorola",
       "model": "XOOM",
       "osVersionFull": "4.1.2",
       "osVersionShort": "4",
@@ -1025,14 +1025,14 @@
       "id": 60,
       "platform": "pad",
       "factory": "Samsung",
-      "model": "Galaxy Tab 3 (GT-P5200)",
+      "model": "Galaxy Tab 3 (GT-P5200) ",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
       "bullShit": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
-        "isSettingsTablet": false,
+        "isSettingsTablet": true,
         "processor": "Intel Atom Z2560",
         "pxPpi": "800x1280",
         "dpi": "hdpi"
@@ -1041,7 +1041,7 @@
     {
       "id": 61,
       "platform": "pad",
-      "factory": "Huawei ",
+      "factory": "Huawei",
       "model": "MediaPad 7 Lite",
       "osVersionFull": "4.0.3",
       "osVersionShort": "4",
@@ -1058,7 +1058,7 @@
     {
       "id": 62,
       "platform": "pad",
-      "factory": "OYSTERS ",
+      "factory": "OYSTERS",
       "model": "T72ER",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
@@ -1075,7 +1075,7 @@
     {
       "id": 63,
       "platform": "pad",
-      "factory": "Samsung ",
+      "factory": "Samsung",
       "model": "Galaxy Tab 3 (SM-T310)",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
