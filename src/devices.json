@@ -8,7 +8,7 @@
       "model": "GALAXY S5 mini",
       "osVersionFull": "6.0",
       "osVersionShort": "6",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4.5,
@@ -25,7 +25,7 @@
       "model": "ZenFone 2",
       "osVersionFull": "6.0",
       "osVersionShort": "6",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.5,
@@ -42,7 +42,7 @@
       "model": "ONE Touch 5036D",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4.5,
@@ -59,7 +59,7 @@
       "model": "Xperia Z2",
       "osVersionFull": "6.0.1",
       "osVersionShort": "6",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -76,7 +76,7 @@
       "model": "Optimus L7 (LG-P705)",
       "osVersionFull": "CM(4.4.4)",
       "osVersionShort": "CM(4.4.4)",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4.3,
@@ -93,7 +93,7 @@
       "model": "Nexus 6P",
       "osVersionFull": "7.1.2",
       "osVersionShort": "7",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.7,
@@ -110,7 +110,7 @@
       "model": "Galaxy S3 Duos",
       "osVersionFull": "4.4.4",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4.8,
@@ -127,7 +127,7 @@
       "model": "G3 (D855)",
       "osVersionFull": "5.0",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.46,
@@ -144,7 +144,7 @@
       "model": "Galaxy Grand Prime Duos",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -161,7 +161,7 @@
       "model": "MI 4c",
       "osVersionFull": "5.1",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -178,7 +178,7 @@
       "model": "MediaPad X2",
       "osVersionFull": "5.0",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -195,7 +195,7 @@
       "model": "Blade L2",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -212,7 +212,7 @@
       "model": "Galaxy S4 mini LTE (I9195)",
       "osVersionFull": "4.4.4",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4.27,
@@ -229,7 +229,7 @@
       "model": "Blade AF3 4",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4,
@@ -246,7 +246,7 @@
       "model": "IXION ES150",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -263,7 +263,7 @@
       "model": "A319",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4,
@@ -280,7 +280,7 @@
       "model": "A536",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -297,7 +297,7 @@
       "model": " M2 Mini",
       "osVersionFull": "5.1",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -314,7 +314,7 @@
       "model": "One M9",
       "osVersionFull": "6.0",
       "osVersionShort": "6",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -331,7 +331,7 @@
       "model": "Cirrus 2 (FS504)",
       "osVersionFull": "5.1",
       "osVersionShort": "5",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -348,7 +348,7 @@
       "model": "Galaxy S7 (SM-G930)",
       "osVersionFull": "7.0",
       "osVersionShort": "7",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.1,
@@ -365,7 +365,7 @@
       "model": "Mi5",
       "osVersionFull": "6.0.1",
       "osVersionShort": "6",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.15,
@@ -382,7 +382,7 @@
       "model": "P90 Black ",
       "osVersionFull": "4.4.4",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": null,
@@ -399,7 +399,7 @@
       "model": "Zenfone 2 ZE551ML",
       "osVersionFull": "5.0",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.5,
@@ -416,7 +416,7 @@
       "model": "M3 NOTE",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.5,
@@ -433,7 +433,7 @@
       "model": "Redmi 3",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5,
@@ -450,7 +450,7 @@
       "model": "N1",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 3.5,
@@ -467,7 +467,7 @@
       "model": "IQ 4407",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4,
@@ -484,7 +484,7 @@
       "model": "C9660",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4.2,
@@ -501,7 +501,7 @@
       "model": "Nexus S",
       "osVersionFull": "4.1.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4,
@@ -518,7 +518,7 @@
       "model": "Galaxy S2 (GT-I9100)",
       "osVersionFull": "4.1.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4.27,
@@ -535,7 +535,7 @@
       "model": "P7 mini",
       "osVersionFull": "4.3",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4.5,
@@ -552,7 +552,7 @@
       "model": "Alto",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 4,
@@ -569,7 +569,7 @@
       "model": "Xperia XZ (F8332) Dual Mineral Black",
       "osVersionFull": "7.0",
       "osVersionShort": "7",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.2,
@@ -586,7 +586,7 @@
       "model": "G5 SE (H845) Gold",
       "osVersionFull": "6.0.1",
       "osVersionShort": "6",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.3,
@@ -603,7 +603,7 @@
       "model": "Nexus 5X (H791)",
       "osVersionFull": "7.1.2",
       "osVersionShort": "7",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 5.2,
@@ -620,7 +620,7 @@
       "model": "Xperia Z2 Tablet",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -637,7 +637,7 @@
       "model": "Galaxy Tab 4 (SM-T231) ",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -654,7 +654,7 @@
       "model": "Nexus 7 ",
       "osVersionFull": "4.4.4",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -671,7 +671,7 @@
       "model": "GALAXY Tab 2 3G (GT-P3100)",
       "osVersionFull": "4.2.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -688,7 +688,7 @@
       "model": "Tab 2 A8-50LC",
       "osVersionFull": "5.0",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -705,7 +705,7 @@
       "model": "Transformer Pad (TF103CG)",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -722,7 +722,7 @@
       "model": "Galaxy Note 10.1",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -739,7 +739,7 @@
       "model": "Galaxy Note Pro 12.2",
       "osVersionFull": "5.0.2",
       "osVersionShort": "5",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 12.2,
@@ -756,7 +756,7 @@
       "model": "Nexus 9 LTE",
       "osVersionFull": "7.1",
       "osVersionShort": "7",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 8.9,
@@ -773,7 +773,7 @@
       "model": "Hit LTE",
       "osVersionFull": "5.1",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -790,7 +790,7 @@
       "model": "G Pad V490",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 8,
@@ -807,7 +807,7 @@
       "model": "Optima Prime 3G",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -824,7 +824,7 @@
       "model": "MultiPad Wize 3087 3G",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -841,7 +841,7 @@
       "model": "TAB 2 A10-70",
       "osVersionFull": "4.4.4",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -858,7 +858,7 @@
       "model": "ZenPad 10 (Z300CG)",
       "osVersionFull": "5.0.2",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -875,7 +875,7 @@
       "model": "MiPad 2",
       "osVersionFull": "5.1",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7.9,
@@ -892,7 +892,7 @@
       "model": "MultiPad Wize 3341 3G",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -909,7 +909,7 @@
       "model": "Galaxy Tab A (SM-T555)",
       "osVersionFull": "5.0.2",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 9.7,
@@ -926,7 +926,7 @@
       "model": "Yoga Tablet 3 10 (YT3-X50M)",
       "osVersionFull": "5.1.1",
       "osVersionShort": "5",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -943,7 +943,7 @@
       "model": "Xperia Tablet Z4",
       "osVersionFull": "7.0",
       "osVersionShort": "7",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -960,7 +960,7 @@
       "model": "Galaxy Tab S2 (SM-T719)",
       "osVersionFull": "6.0.1",
       "osVersionShort": "6",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 8,
@@ -977,7 +977,7 @@
       "model": "TAB 2 A7-30DC",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -994,7 +994,7 @@
       "model": "TX22",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -1011,7 +1011,7 @@
       "model": "XOOM",
       "osVersionFull": "4.1.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -1028,7 +1028,7 @@
       "model": "Galaxy Tab 3 (GT-P5200) ",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 10.1,
@@ -1045,7 +1045,7 @@
       "model": "MediaPad 7 Lite",
       "osVersionFull": "4.0.3",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -1062,7 +1062,7 @@
       "model": "T72ER",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": true,
+      "weakDevice": true,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 7,
@@ -1079,7 +1079,7 @@
       "model": "Galaxy Tab 3 (SM-T310)",
       "osVersionFull": "4.4.2",
       "osVersionShort": "4",
-      "bullShit": false,
+      "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
         "diagonal": 8,

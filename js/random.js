@@ -44,7 +44,7 @@ window.onload = function () {
 
             //распределение девайсов по группам (по версиям OS и не отстой) и сохранение в массивах
             for (var i = 0; i < arrayDevice.devices.length; i++) {
-                if (arrayDevice.devices[i].platform == 'phone' & arrayDevice.devices[i].bullShit != true) {
+                if (arrayDevice.devices[i].platform == 'phone' & arrayDevice.devices[i].weakDevice != true) {
                     switch (arrayDevice.devices[i].osVersionShort) {
                         case '4':
                             arrayListPhone4x.push(arrayDevice.devices[i].id);
@@ -66,7 +66,7 @@ window.onload = function () {
                             console.log("что-то пошло не так с телефонами " + i);
                     }
                 }
-                if (arrayDevice.devices[i].platform == 'pad' & arrayDevice.devices[i].bullShit != true) {
+                if (arrayDevice.devices[i].platform == 'pad' & arrayDevice.devices[i].weakDevice != true) {
                     switch (arrayDevice.devices[i].osVersionShort) {
                         case '4':
                             arrayListPad4x.push(arrayDevice.devices[i].id);
@@ -171,22 +171,22 @@ window.onload = function () {
 function arrayDeviceNotUsed() {
 
     for (var i = 0; i < arrayDeviceIsUsed.devices.length; i++) {
-        if (arrayDeviceIsUsed.devices[i].platform == 'phone' & arrayDeviceIsUsed.devices[i].osVersionShort > 4 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
+        if (arrayDeviceIsUsed.devices[i].platform == 'phone' & arrayDeviceIsUsed.devices[i].osVersionShort > 4 & arrayDeviceIsUsed.devices[i].weakDevice != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
             arrayPhoneNotUsedModern.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
-        if (arrayDeviceIsUsed.devices[i].platform == 'phone' & arrayDeviceIsUsed.devices[i].osVersionShort < 5 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
+        if (arrayDeviceIsUsed.devices[i].platform == 'phone' & arrayDeviceIsUsed.devices[i].osVersionShort < 5 & arrayDeviceIsUsed.devices[i].weakDevice != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
             arrayPhoneNotUsedClassic.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
-        if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != false & arrayDeviceIsUsed.devices[i].osVersionShort > 4 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
+        if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != false & arrayDeviceIsUsed.devices[i].osVersionShort > 4 & arrayDeviceIsUsed.devices[i].weakDevice != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
             arrayPadNotUsedModermTabletSettings.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
-        if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != true & arrayDeviceIsUsed.devices[i].osVersionShort < 5 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
+        if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != true & arrayDeviceIsUsed.devices[i].osVersionShort < 5 & arrayDeviceIsUsed.devices[i].weakDevice != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
             arrayPadNotUsedClassicPhoneSettings.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
-        if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != true & arrayDeviceIsUsed.devices[i].osVersionShort > 4 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
+        if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != true & arrayDeviceIsUsed.devices[i].osVersionShort > 4 & arrayDeviceIsUsed.devices[i].weakDevice != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
             arrayPadNotUsedModermPhoneSettings.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
-        if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != false & arrayDeviceIsUsed.devices[i].osVersionShort < 5 & arrayDeviceIsUsed.devices[i].bullShit != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
+        if (arrayDeviceIsUsed.devices[i].platform == 'pad' & arrayDeviceIsUsed.devices[i].deviceInfo.isSettingsTablet != false & arrayDeviceIsUsed.devices[i].osVersionShort < 5 & arrayDeviceIsUsed.devices[i].weakDevice != true & arrayDeviceIsUsed.devices[i].isUsed != true) {
             arrayPadNotUsedClassicTabletSettings.push(arrayDeviceIsUsed.devices[i].factory + " " + arrayDeviceIsUsed.devices[i].model + " (" + arrayDeviceIsUsed.devices[i].osVersionFull + ")");
         }
     }
