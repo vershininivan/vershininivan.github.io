@@ -14,9 +14,11 @@ window.onload = function () {
 
             var text_1 = text_2 = text_3 = "";
 
-            text_1 += tableOpen + rowOpen;
+            text_1 += tableOpen;
 
             //console.log(arrayDevice.data.structure.fields[0].title);
+
+            text_1 += rowOpen;
 
             for (var i = 0; i < arrayDevice.data.structure.fields.length; i++) {
 
@@ -24,17 +26,23 @@ window.onload = function () {
 
             }
 
+            text_1 += rowClose;
+
             for (var i = 0; i < arrayDevice.data.rows.length; i++) {
 
                 var rowArray = arrayDevice.data.rows[i];
+
+                text_1 += rowOpen;
 
                 for (var j = 0; j < rowArray.length; j++) {
                     text_1 += cellOpen + rowArray[0].sort + cellClose;
                 }
 
+                text_1 += rowClose;
+
             }
 
-            text_1 += tableClose + rowClose;
+            text_1 += tableClose;
 
             $(".smallTable").html(text_1);
 
