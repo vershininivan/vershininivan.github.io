@@ -9,8 +9,8 @@ var cellOpen = '<div class="divTableCell">';
 var cellClose = '</div>';
 
 var tableArray = [];
-var testersName_1 = [];
-var testersName_2 = [];
+var testersName = [];
+var testersSortName = [];
 var text_1 = "";
 
 window.onload = function () {
@@ -49,21 +49,28 @@ function generateTable() {
             text_1 += cellOpen + rowArray[j].sort + cellClose;
         }
 
-        var result_1 = rowArray[2].sort.match( /[А-Яа-я]*/i ); 
-        var result_2 = rowArray[2].sort.search( /[А-Яа-я]*/i );
-        testersName_1.push(result_1);
-        testersName_2.push(result_2);
+        var result = rowArray[2].sort.match(/[А-Яа-я]*/i);
+        testersName.push(result);
+
 
         text_1 += rowClose;
 
     }
 
+    testersArray();
+
     text_1 += tableClose;
 
     $(".smallTable").html(text_1);
 
-    console.log(testersName_1);
-    console.log(testersName_1[0][0]);
-    console.log(testersName_1[2][0]); 
+    console.log(testersSortName);
 
+}
+
+function testersArray() {
+    for (var k = 2; k < testersName.length; k++) {
+        if (typeof testersName[k] !== 'undefined' && testersName[k] !== null) {
+            testersSortName.push(testersName[k]);
+        }
+    }
 }
