@@ -28,7 +28,7 @@ window.onload = function () {
 
             text_1 += rowClose;
 
-            for (var i = 0; i < arrayDevice.data.rows.length; i++) {
+            /*for (var i = 0; i < arrayDevice.data.rows.length; i++) {
 
                 var rowArray = arrayDevice.data.rows[i];
 
@@ -40,17 +40,17 @@ window.onload = function () {
 
                 text_1 += rowClose;
 
-            }
+            }*/
 
             text_1 += tableClose;
 
             $(".smallTable").html(text_1);
 
 
-            //console.log(arrayDevice.data.rows.length);
-            //console.log(arrayDevice.data.rows[0].length);
-            //var rowArray = arrayDevice.data.rows[0];
-            //console.log(rowArray[0].sort);
+            console.log(arrayDevice.data.rows.length);
+            console.log(arrayDevice.data.rows[0].length);
+            var rowArray = arrayDevice.data.rows[0];
+            console.log(rowArray[0].sort);
 
 
         });
