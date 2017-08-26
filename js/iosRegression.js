@@ -28,19 +28,19 @@ window.onload = function () {
 
             text_1 += rowClose;
 
-            //for (var i = 0; i < arrayDevice.data.rows.length; i++) {
+            for (var i = 0; i < arrayDevice.data.rows.length; i++) {
 
                 var rowArray = arrayDevice.data.rows[0];
 
                 text_1 += rowOpen;
 
                 for (var j = 0; j < rowArray.length; j++) {
-                    text_1 += cellOpen + rowArray[0].sort + cellClose;
+                    text_1 += cellOpen + rowArray[j].sort + cellClose;
                 }
 
                 text_1 += rowClose;
 
-            //}
+            }
 
             text_1 += tableClose;
 
