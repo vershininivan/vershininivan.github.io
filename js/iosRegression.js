@@ -9,6 +9,7 @@ var cellOpen = '<div class="divTableCell">';
 var cellClose = '</div>';
 
 var tableArray = [];
+var testersName = [];
 var text_1 = "";
 
 window.onload = function () {
@@ -45,6 +46,8 @@ function generateTable() {
 
         for (var j = 0; j < rowArray.length; j++) {
             text_1 += cellOpen + rowArray[j].sort + cellClose;
+            var result = rowArray[2].sort.match( /([А-Яа-я]+)/i );
+            testersName.push(result);
         }
 
         text_1 += rowClose;
@@ -54,5 +57,7 @@ function generateTable() {
     text_1 += tableClose;
 
     $(".smallTable").html(text_1);
+
+    console.log(testersName);
 
 }
