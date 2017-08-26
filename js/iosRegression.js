@@ -30,7 +30,7 @@ window.onload = function () {
 
             for (var i = 0; i < arrayDevice.data.rows.length; i++) {
 
-                var rowArray = arrayDevice.data.rows[0];
+                var rowArray = arrayDevice.data.rows[i];
 
                 text_1 += rowOpen;
 
