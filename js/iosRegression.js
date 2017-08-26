@@ -59,17 +59,21 @@ function generateTable() {
 
     testersArray();
 
+    var newArray = testersSortName.filter(function(elem, pos) {
+        return testersSortName.indexOf(elem) == pos;
+    });
+
     text_1 += tableClose;
 
     $(".smallTable").html(text_1);
 
-    console.log(testersSortName);
+    console.log(newArray);
 
 }
 
 function testersArray() {
     for (var k = 2; k < testersName.length; k++) {
-        if (typeof testersName[k][0] !== '""' && testersName[k][0] !== null) {
+        if (typeof testersName[k][0] !== '' && testersName[k][0] !== null) {
             testersSortName.push(testersName[k][0]);
         }
     }
