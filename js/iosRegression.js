@@ -35,7 +35,7 @@ window.onload = function () {
 
             console.log(arrayDevice.data.rows.length);
             console.log(arrayDevice.data.rows[0].length);
-            var rowArray = arrayDevice.data.rows[0]
+            var rowArray = arrayDevice.data.rows[0];
             console.log(rowArray[0].sort);
             
 
