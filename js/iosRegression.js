@@ -28,9 +28,9 @@ window.onload = function () {
 
             text_1 += rowClose;
 
-            /*for (var i = 0; i < arrayDevice.data.rows.length; i++) {
+            //for (var i = 0; i < arrayDevice.data.rows.length; i++) {
 
-                var rowArray = arrayDevice.data.rows[i];
+                var rowArray = arrayDevice.data.rows[0];
 
                 text_1 += rowOpen;
 
@@ -40,7 +40,7 @@ window.onload = function () {
 
                 text_1 += rowClose;
 
-            }*/
+            //}
 
             text_1 += tableClose;
 
