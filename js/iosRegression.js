@@ -1,11 +1,13 @@
 
 
 
-var table = '<div id="table">';
-var row = '<div class="row">';
+var tableOpen = '<div id="table">';
+var tableClose = '</div>';
+var rowOpen = '<div class="row">';
+var rowClose = '</div>';
 var cellOpen = '<span class="cell">';
 var cellClose = '</span>';
-var divClose = '</div>';
+
 
 
 var arrayDeviceIsUsed = [];
@@ -16,7 +18,7 @@ window.onload = function () {
 
             var text_1 = text_2 = text_3 = "";
 
-            text_1 += table + row;
+            text_1 += tableOpen + rowOpen;
 
             //console.log(arrayDevice.data.structure.fields[0].title);
 
@@ -27,9 +29,12 @@ window.onload = function () {
                 //console.log(arrayDevice.data.structure.fields[i].title);
             }
 
-            text_1 += divClose + divClose;
+            text_1 += tableClose + rowClose;
 
             $(".smallTable").html(text_1);
+
+            console.log(arrayDevice.data.rows.length);
+            console.log(arrayDevice.data.rows[0].sort);
 
         });
     });
