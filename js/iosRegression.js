@@ -9,7 +9,8 @@ var cellOpen = '<div class="divTableCell">';
 var cellClose = '</div>';
 
 var tableArray = [];
-var testersName = [];
+var testersName_1 = [];
+var testersName_2 = [];
 var text_1 = "";
 
 window.onload = function () {
@@ -48,8 +49,10 @@ function generateTable() {
             text_1 += cellOpen + rowArray[j].sort + cellClose;
         }
 
-        var result = rowArray[2].sort.match( /[А-Яа-я]*/i );
-        testersName.push(result);
+        var result_1 = rowArray[2].sort.match( /[А-Яа-я]*/i ); 
+        var result_2 = rowArray[2].sort.search( /[А-Яа-я]*/i );
+        testersName_1.push(result_1);
+        testersName_2.push(result_2);
 
         text_1 += rowClose;
 
@@ -59,6 +62,7 @@ function generateTable() {
 
     $(".smallTable").html(text_1);
 
-    console.log(testersName);
+    console.log(testersName_1);
+    console.log(testersName_2);
 
 }
