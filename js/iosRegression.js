@@ -68,6 +68,9 @@ function generateTable() {
     $(".smallTable").html(text_1);
 
     console.log(newArray);
+    console.log(newArray[0]);
+    console.log(newArray[1]);
+    console.log(newArray[2]);
 
 }
 
