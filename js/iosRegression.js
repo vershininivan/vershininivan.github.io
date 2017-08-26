@@ -63,6 +63,7 @@ function generateTable() {
     $(".smallTable").html(text_1);
 
     console.log(testersName_1);
-    console.log(testersName_2);
+    console.log(testersName_1[0][0]);
+    console.log(testersName_1[2][0]); 
 
 }
