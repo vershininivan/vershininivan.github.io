@@ -69,7 +69,7 @@ function generateTable() {
 
 function testersArray() {
     for (var k = 2; k < testersName.length; k++) {
-        if (typeof testersName[k][0] !== 'undefined' && testersName[k][0] !== null) {
+        if (typeof testersName[k][0] !== '""' && testersName[k][0] !== null) {
             testersSortName.push(testersName[k][0]);
         }
     }
