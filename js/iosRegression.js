@@ -51,6 +51,9 @@ window.onload = function () {
             console.log(arrayDevice.data.rows[0].length);
             var rowArray = arrayDevice.data.rows[0];
             console.log(rowArray[0].sort);
+            console.log(rowArray[1].sort);
+            console.log(rowArray[2].sort);
+            console.log(rowArray[3].sort);
 
 
         });
