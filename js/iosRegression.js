@@ -34,7 +34,10 @@ window.onload = function () {
             $(".smallTable").html(text_1);
 
             console.log(arrayDevice.data.rows.length);
-            console.log(arrayDevice.data.rows[0].[0]]);
+            console.log(arrayDevice.data.rows[0].length);
+            var rowArray = arrayDevice.data.rows[0]
+            console.log(rowArray[0].sort);
+            
 
         });
     });
