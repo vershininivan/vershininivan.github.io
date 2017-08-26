@@ -46,9 +46,10 @@ function generateTable() {
 
         for (var j = 0; j < rowArray.length; j++) {
             text_1 += cellOpen + rowArray[j].sort + cellClose;
-            var result = rowArray[2].sort.match( /([А-Яа-я]+)/i );
-            testersName.push(result);
         }
+
+        var result = rowArray[2].sort.match( /([А-Яа-я]+)/i );
+        testersName.push(result);
 
         text_1 += rowClose;
 
