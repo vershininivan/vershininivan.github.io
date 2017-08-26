@@ -1,17 +1,19 @@
 
-/*var tableOpen = '<div id="table">';
+var tableOpen = '<div class="divTable">';
 var tableClose = '</div>';
-var rowOpen = '<div class="row">';
+var tableBodyOpen = '<div class="divTableBody">';
+var tableBodyClose = '</div>';
+var rowOpen = '<div class="divTableRow">';
 var rowClose = '</div>';
-var cellOpen = '<span class="cell">';
-var cellClose = '</span>';*/
+var cellOpen = '<div class="divTableCell">';
+var cellClose = '</div>';
 
-var tableOpen = '<table border="1">';
+/*var tableOpen = '<table border="1">';
 var tableClose = '</table>';
 var rowOpen = '<tr>';
 var rowClose = ' </tr>';
 var cellOpen = '<td>';
-var cellClose = '</td>';
+var cellClose = '</td>';*/
 
 
 var arrayDeviceIsUsed = [];
