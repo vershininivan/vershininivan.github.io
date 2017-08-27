@@ -126,6 +126,8 @@ function testersInRegression() {
         return testersInRegressionSortArray.indexOf(elem) == pos;
     });
 
+    testersInRegressionSortArray = newArray;
+
     console.log(testersInRegressionSortArray);
 
 }
