@@ -89,7 +89,7 @@ function getRawTable() {
         console.log(tableArray.data.rows[i]);
         console.log(tableArray.data.rows[i].length);
         console.log(rowArray[i]);
-        console.log(rowArray[i].sort);
+        console.log(tableArray.data.rows[i].sort);
 
         tableRawArray[i] = [];
 
