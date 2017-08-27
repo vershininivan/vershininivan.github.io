@@ -88,6 +88,7 @@ function getRawTable() {
 
         console.log(tableArray.data.rows[i]);
         console.log(tableArray.data.rows[i].length);
+        console.log(rowArray[i].sort);
 
         for (var j = 0; j < rowArray.length; j++) {
             tableRawArray[i][j] = rowArray[j].sort;
