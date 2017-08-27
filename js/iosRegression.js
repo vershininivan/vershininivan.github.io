@@ -11,9 +11,11 @@ var cellClose = '</div>';
 var tableArray = [];
 var tableHeaderArray = [];
 var tableRawArray = [];
-var testersPhone = [];
-var testersSortName = [];
+var testersInRegressionArray = [];
+var testersInRegressionSortArray = [];
 var text_1 = "";
+var testersInRegressionArray = [];
+
 
 window.onload = function () {
     $(document).ready(function () {
@@ -26,6 +28,8 @@ window.onload = function () {
             getRawTable();
 
             generateTable();
+
+            testersInRegression();
 
         });
     });
@@ -56,12 +60,6 @@ function generateTable() {
         text_1 += rowClose;
 
     }
-
-    //findTestersPhone();
-
-    var newArray = testersSortName.filter(function (elem, pos) {
-        return testersSortName.indexOf(elem) == pos;
-    });
 
     text_1 += tableClose;
 
@@ -98,10 +96,31 @@ function getRawTable() {
 
 }
 
-function findTestersPhone() {
-    for (var k = 2; k < testersPhone.length; k++) {
-        if (typeof testersPhone[k][0] !== undefined && testersPhone[k][0] !== null && testersPhone[k][0] !== "") {
-            testersSortName.push(testersPhone[k][0]);
+function testersInRegression() {
+
+    var RegexVar;
+
+    for (var i = 0; i < tableRawArray.length; i++) {
+
+        RegexVar = tableRawArray[i][2].match(/[А-Яа-я]*/i);
+        testersInRegressionArray.push(RegexVar);
+        RegexVar = tableRawArray[i][6].match(/[А-Яа-я]*/i);
+        testersInRegressionArray.push(RegexVar);
+
+    }
+
+    for (var k = 2; k < testersInRegressionArray.length; k++) {
+        if (typeof testersInRegressionArray[k][0] !== undefined && testersInRegressionArray[k][0] !== null && testersInRegressionArray[k][0] !== "") {
+            testersInRegressionSortArray.push(testersInRegressionArray[k][0]);
         }
     }
+
+    var newArray = testersInRegressionSortArray.filter(function (elem, pos) {
+        return testersInRegressionSortArray.indexOf(elem) == pos;
+    });
+
+    console.log(newArray);
+
 }
+
+
