@@ -139,7 +139,7 @@ function testersInRegression() {
         var k = 0;
         for (var j = 0; j < testArrayName[i].length; j++) {    
             if (typeof testArrayName[i][j] !== undefined && testArrayName[i][j] !== null && testArrayName[i][j] !== "") {
-                testArraySortTestersName[i][k].push(testArrayName[i][j]);
+                testArraySortTestersName[i].push(testArrayName[i][j]);
                 k++;
             }
         }
