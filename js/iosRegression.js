@@ -85,13 +85,14 @@ function getRawTable() {
     for (var i = 0; i < tableArray.data.rows.length; i++) {
 
         var rowArray = tableArray.data.rows[i];
-        console.log(tableArray.data.rows[5]);
-
+        
         for (var j = 0; j < rowArray.length; j++) {
-            tableRawArray[i][j].push(rowArray[j].sort);
+            tableRawArray[i][j]= rowArray[j].sort;
         }
 
     }
+
+    console.log(tableRawArray);
 
 }
 
