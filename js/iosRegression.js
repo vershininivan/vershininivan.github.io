@@ -72,7 +72,7 @@ function generateTable() {
 function getHeaderTable() {
     for (var i = 0; i < tableArray.data.structure.fields.length; i++) {
 
-        tableHeaderArray.push(tableArray.data.structure.fields[i].title);   
+        tableHeaderArray.push(tableArray.data.structure.fields[i].title);
 
     }
 
@@ -85,9 +85,12 @@ function getRawTable() {
     for (var i = 0; i < tableArray.data.rows.length; i++) {
 
         var rowArray = tableArray.data.rows[i];
-        
+
+        console.log(tableArray.data.rows[i]);
+        console.log(tableArray.data.rows[i].length);
+
         for (var j = 0; j < rowArray.length; j++) {
-            tableRawArray[i][j]= rowArray[j].sort;
+            tableRawArray[i][j] = rowArray[j].sort;
         }
 
     }
