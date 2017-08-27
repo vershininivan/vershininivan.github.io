@@ -9,7 +9,9 @@ var cellOpen = '<div class="divTableCell">';
 var cellClose = '</div>';
 
 var tableArray = [];
-var testersName = [];
+var tableHeaderArray = [];
+var tableRawArray = [];
+var testersPhone = [];
 var testersSortName = [];
 var text_1 = "";
 
@@ -18,6 +20,10 @@ window.onload = function () {
         $.getJSON("src/regressionTable.json", function (jsonToArray) {
 
             tableArray = jsonToArray;
+
+            getHeaderTable();
+
+            getRawTable();
 
             generateTable();
 
@@ -31,35 +37,29 @@ function generateTable() {
 
     text_1 += rowOpen;
 
-    for (var i = 0; i < tableArray.data.structure.fields.length; i++) {
+    for (var i = 0; i < tableHeaderArray.length; i++) {
 
-        text_1 += cellOpen + tableArray.data.structure.fields[i].title + cellClose;
+        text_1 += cellOpen + tableHeaderArray[i] + cellClose;
 
     }
 
     text_1 += rowClose;
 
-    for (var i = 0; i < tableArray.data.rows.length; i++) {
-
-        var rowArray = tableArray.data.rows[i];
+    for (var i = 0; i < tableRawArray.length; i++) {
 
         text_1 += rowOpen;
 
-        for (var j = 0; j < rowArray.length; j++) {
-            text_1 += cellOpen + rowArray[j].sort + cellClose;
+        for (var j = 0; j < tableRawArray[i].length; j++) {
+            text_1 += cellOpen + tableRawArray[i][j] + cellClose;
         }
-
-        var result = rowArray[2].sort.match(/[А-Яа-я]*/i);
-        testersName.push(result);
-
 
         text_1 += rowClose;
 
     }
 
-    testersArray();
+    //findTestersPhone();
 
-    var newArray = testersSortName.filter(function(elem, pos) {
+    var newArray = testersSortName.filter(function (elem, pos) {
         return testersSortName.indexOf(elem) == pos;
     });
 
@@ -67,17 +67,34 @@ function generateTable() {
 
     $(".smallTable").html(text_1);
 
-    console.log(newArray);
-    console.log(newArray[0]);
-    console.log(newArray[1]);
-    console.log(newArray[2]);
+}
+
+function getHeaderTable() {
+    for (var i = 0; i < tableArray.data.structure.fields.length; i++) {
+
+        tableHeaderArray.push(tableArray.data.structure.fields[i].title);
+
+    }
+}
+
+function getRawTable() {
+
+    for (var i = 0; i < tableArray.data.rows.length; i++) {
+
+        var rowArray = tableArray.data.rows[i];
+
+        for (var j = 0; j < rowArray.length; j++) {
+            tableRawArray[i][j].push(rowArray[j].sort);
+        }
+
+    }
 
 }
 
-function testersArray() {
-    for (var k = 2; k < testersName.length; k++) {
-        if (typeof testersName[k][0] !== undefined && testersName[k][0] !== null && testersName[k][0] !== "") {
-            testersSortName.push(testersName[k][0]);
+function findTestersPhone() {
+    for (var k = 2; k < testersPhone.length; k++) {
+        if (typeof testersPhone[k][0] !== undefined && testersPhone[k][0] !== null && testersPhone[k][0] !== "") {
+            testersSortName.push(testersPhone[k][0]);
         }
     }
 }
