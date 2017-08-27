@@ -154,11 +154,11 @@ function testersInRegression() {
         testArraySortTestersTime[i] = [];
         for (var j = 0; j < testArrayTime[i].length; j++) {    
             if (typeof testArrayTime[i][j] !== undefined && testArrayTime[i][j] !== null && testArrayTime[i][j] !== "") {
-                testArraySortTestersTime[m][k] =testArrayTime[i][j];
+                testArraySortTestersTime[i][k] =testArrayTime[i][j];
                 k++;
             }
         }
-        m++;
+        //m++;
     }
 
     console.log(testArrayName);
