@@ -21,15 +21,18 @@ window.onload = function () {
     $(document).ready(function () {
         $.getJSON("src/regressionTable.json", function (jsonToArray) {
 
+            //записываем в переменную данные json файла
             tableArray = jsonToArray;
-
+            //вызываем функцию для получения шапки таблицы
             getHeaderTable();
-
+            //вызываем функцию для получения строк таблицы
             getRawTable();
-
+            //вызываем функцию для построяения таблицы
             generateTable();
-
+            //вызываем функцию для сбора участников регрессии
             testersInRegression();
+            //вызываем функцию для рассчета сколько каждый тестер сделал в регрессии
+            calculateEstimate();
 
         });
     });
@@ -119,12 +122,14 @@ function testersInRegression() {
         return testersInRegressionSortArray.indexOf(elem) == pos;
     });
 
+}
+
+function calculateEstimate() {
+
     var testArrayName = [];
     var testArrayTime = [];
 
-
     for (var i = 2; i < tableRawArray.length; i++) {
-
         RegexVar = tableRawArray[i][6].match(/[А-Яа-я]*/ig);
         testArrayName.push(RegexVar);
         RegexVar = tableRawArray[i][7].match(/[0-9]*/ig);
@@ -143,29 +148,26 @@ function testersInRegression() {
                 k++;
             }
         }
-
     }
 
-    var newArray2 = testArraySortTestersName.filter(function (elem, pos) {
-        return testArraySortTestersName.indexOf(elem) == pos;
-    });
-
-    console.log(newArray2);
-
     for (var i = 0; i < testArrayTime.length; i++) {
-
         var k = 0;
         testArraySortTestersTime[i] = [];
-
         for (var j = 0; j < testArrayTime[i].length; j++) {
             if (typeof testArrayTime[i][j] !== undefined && testArrayTime[i][j] !== null && testArrayTime[i][j] !== "") {
                 testArraySortTestersTime[i][k] = testArrayTime[i][j];
                 k++;
             }
         }
-
     }
 
-}
+    var estimateTestersInRegression = []
+    estimateTestersInRegression = testersInRegressionSortArray;
 
+    for (var i = 0; i < testersInRegressionSortArray.length; i++) {
 
+        for (var j = 0; j < testArraySortTestersName.length; j++) {
+
+        }
+
+    }
