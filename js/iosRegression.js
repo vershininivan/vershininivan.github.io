@@ -129,7 +129,7 @@ function testersInRegression() {
 
         RegexVar = tableRawArray[i][6].match(/[А-Яа-я]*/ig);
         testArrayName.push(RegexVar);
-        RegexVar = testArrayTime[i][7].match(/\d+/ig);
+        RegexVar = testArrayTime[i][7].match(/(100)/ig);
         testArrayTime.push(RegexVar);
     }
 
