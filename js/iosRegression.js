@@ -38,6 +38,7 @@ window.onload = function () {
     });
 }
 
+//Функция для построяения таблицы
 function generateTable() {
 
     text_1 += tableOpen;
@@ -70,6 +71,7 @@ function generateTable() {
 
 }
 
+//Функция для получения шапки таблицы
 function getHeaderTable() {
     for (var i = 0; i < tableArray.data.structure.fields.length; i++) {
 
@@ -77,10 +79,11 @@ function getHeaderTable() {
 
     }
 
-    console.log(tableHeaderArray);
+    //console.log(tableHeaderArray);
 
 }
 
+//Функция для получения строк таблицы
 function getRawTable() {
 
     for (var i = 0; i < tableArray.data.rows.length; i++) {
@@ -95,10 +98,11 @@ function getRawTable() {
 
     }
 
-    console.log(tableRawArray);
+    //console.log(tableRawArray);
 
 }
 
+//Функция для сбора участников регрессии
 function testersInRegression() {
 
     var RegexVar;
@@ -124,6 +128,7 @@ function testersInRegression() {
 
 }
 
+//Функция для рассчета сколько каждый тестер сделал в регрессии
 function calculateEstimate() {
 
     var testArrayName = [];
@@ -168,6 +173,16 @@ function calculateEstimate() {
 
         for (var j = 0; j < testArraySortTestersName.length; j++) {
 
+            for (var k = 0; k < testArraySortTestersName[i].length; k++) {
+                if (testArraySortTestersName[i][k] == testersInRegressionSortArray[i]){
+                    testersInRegressionSortArray[i][1] += testArraySortTestersTime[i][k];
+                }
+            }
+
         }
 
     }
+
+    console.log(estimateTestersInRegression);
+
+}
