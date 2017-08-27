@@ -72,11 +72,12 @@ function generateTable() {
 function getHeaderTable() {
     for (var i = 0; i < tableArray.data.structure.fields.length; i++) {
 
-        tableHeaderArray.push(tableArray.data.structure.fields[i].title);
-        
-        console.log(tableHeaderArray);
+        tableHeaderArray.push(tableArray.data.structure.fields[i].title);   
 
     }
+
+    console.log(tableHeaderArray);
+
 }
 
 function getRawTable() {
