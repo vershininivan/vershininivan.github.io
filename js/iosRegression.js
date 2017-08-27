@@ -126,6 +126,8 @@ function testersInRegression() {
         return testersInRegressionSortArray.indexOf(elem) == pos;
     });
 
+    console.log(testersInRegressionSortArray);
+
 }
 
 //Функция для рассчета сколько каждый тестер сделал в регрессии
@@ -183,9 +185,9 @@ function calculateEstimate() {
 
     }
 
-    console.log(testersInRegressionSortArray);
+    /*console.log(testersInRegressionSortArray);
     console.log(testArraySortTestersTime);
     console.log(testArraySortTestersName.length);
-    console.log(estimateTestersInRegression);
+    console.log(estimateTestersInRegression);*/
 
 }
