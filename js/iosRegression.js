@@ -179,6 +179,7 @@ function calculateEstimate() {
             estimateTestersInRegression[i] = [];
             for (var k = 0; k < testArraySortTestersName[j].length; k++) {
                 if (testArraySortTestersName[j][k] == testersInRegressionSortArray[i]){
+                    console.log('Есть совпадение');
                     estimateTestersInRegression[i][1] += testArraySortTestersTime[j][k];
                 }
             }
