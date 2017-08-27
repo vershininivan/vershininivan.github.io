@@ -146,6 +146,11 @@ function testersInRegression() {
 
     }
 
+    var newArray2 = testArraySortTestersName.filter(function (elem, pos) {
+        return testArraySortTestersName.indexOf(elem) == pos;
+    });
+
+    console.log(newArray2);
 
     for (var i = 0; i < testArrayTime.length; i++) {
 
