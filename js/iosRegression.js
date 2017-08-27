@@ -119,8 +119,6 @@ function testersInRegression() {
         return testersInRegressionSortArray.indexOf(elem) == pos;
     });
 
-    console.log(newArray);
-
     var testArrayName = [];
     var testArrayTime = [];
 
@@ -148,34 +146,21 @@ function testersInRegression() {
 
     }
 
-    var m = 0;
-    /*var checkEmptyInput = 0;
-    var checkEmptyOutput = 0;*/
 
     for (var i = 0; i < testArrayTime.length; i++) {
 
         var k = 0;
         testArraySortTestersTime[i] = [];
-        //checkEmptyInput = checkEmptyOutput;
 
         for (var j = 0; j < testArrayTime[i].length; j++) {
             if (typeof testArrayTime[i][j] !== undefined && testArrayTime[i][j] !== null && testArrayTime[i][j] !== "") {
                 testArraySortTestersTime[i][k] = testArrayTime[i][j];
                 k++;
-                //checkEmptyOutput++;
             }
         }
 
-        /*if (checkEmptyInput != checkEmptyOutput) {
-            m++;
-        }*/
-
     }
 
-    console.log(testArrayName);
-    console.log(testArrayTime);
-    console.log(testArraySortTestersName);
-    console.log(testArraySortTestersTime);
 }
 
 
