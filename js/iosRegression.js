@@ -176,7 +176,7 @@ function calculateEstimate() {
     for (var i = 0; i < testersInRegressionSortArray.length; i++) {
 
         for (var j = 0; j < testArraySortTestersName.length; j++) {
-
+            estimateTestersInRegression[i] = [];
             for (var k = 0; k < testArraySortTestersName[j].length; k++) {
                 if (testArraySortTestersName[j][k] == testersInRegressionSortArray[i]){
                     estimateTestersInRegression[i][1] += testArraySortTestersTime[j][k];
