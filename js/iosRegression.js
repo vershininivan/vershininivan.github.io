@@ -125,7 +125,7 @@ function testersInRegression() {
 
     for (var i = 0; i < tableRawArray.length; i++) {
 
-        RegexVar = tableRawArray[i][2].match(/[А-Яа-я]*/ig);
+        RegexVar = tableRawArray[i][6].match(/[А-Яа-я]*/ig);
         testArray.push(RegexVar);
 
     }
