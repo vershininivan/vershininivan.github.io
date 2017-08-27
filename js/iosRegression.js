@@ -121,16 +121,20 @@ function testersInRegression() {
 
     console.log(newArray);
 
-    var testArray = [];
+    var testArrayName = [];
+    var testArrayTime = [];
+
 
     for (var i = 0; i < tableRawArray.length; i++) {
 
         RegexVar = tableRawArray[i][6].match(/[А-Яа-я]*/ig);
-        testArray.push(RegexVar);
-
+        testArrayName.push(RegexVar);
+        RegexVar = testArrayTime[i][7].match(/[0-9]*/ig);
+        testArrayTime.push(RegexVar);
     }
 
-    console.log(testArray);
+    console.log(testArrayName);
+    console.log(testArrayTime);
 }
 
 
