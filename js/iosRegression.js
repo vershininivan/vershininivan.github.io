@@ -109,9 +109,9 @@ function testersInRegression() {
 
     }
 
-    for (var k = 2; k < testersInRegressionArray.length; k++) {
-        if (typeof testersInRegressionArray[k][0] !== undefined && testersInRegressionArray[k][0] !== null && testersInRegressionArray[k][0] !== "") {
-            testersInRegressionSortArray.push(testersInRegressionArray[k][0]);
+    for (var i = 2; i < testersInRegressionArray.length; i++) {
+        if (typeof testersInRegressionArray[i][0] !== undefined && testersInRegressionArray[i][0] !== null && testersInRegressionArray[i][0] !== "") {
+            testersInRegressionSortArray.push(testersInRegressionArray[i][0]);
         }
     }
 
@@ -125,7 +125,7 @@ function testersInRegression() {
     var testArrayTime = [];
 
 
-    for (var i = 0; i < tableRawArray.length; i++) {
+    for (var i = 2; i < tableRawArray.length; i++) {
 
         RegexVar = tableRawArray[i][6].match(/[А-Яа-я]*/ig);
         testArrayName.push(RegexVar);
@@ -133,8 +133,20 @@ function testersInRegression() {
         testArrayTime.push(RegexVar);
     }
 
+    var testArraySortTestersName = [];
+
+    for (var i = 2; i < testArrayName.length; i++) {
+        for (var j = 2; j < testArrayName[i].length; j++) {
+            if (typeof testArrayName[i][j] !== undefined && testArrayName[i][j] !== null && testArrayName[i][j] !== "") {
+                testArraySortTestersName[i].push(testArrayName[i][j]);
+            }
+        }
+
+    }
+
     console.log(testArrayName);
     console.log(testArrayTime);
+    console.log(testArraySortTestersName);
 }
 
 
