@@ -135,7 +135,7 @@ function testersInRegression() {
 
     var testArraySortTestersName = [];
 
-    for (var i = 2; i < testArrayName.length; i++) {
+    for (var i = 0; i < testArrayName.length; i++) {
         var k = 0;
         testArraySortTestersName[i] = [];
         for (var j = 0; j < testArrayName[i].length; j++) {    
