@@ -139,9 +139,9 @@ function testersInRegression() {
     for (var i = 0; i < testArrayName.length; i++) {
         var k = 0;
         testArraySortTestersName[i] = [];
-        for (var j = 0; j < testArrayName[i].length; j++) {    
+        for (var j = 0; j < testArrayName[i].length; j++) {
             if (typeof testArrayName[i][j] !== undefined && testArrayName[i][j] !== null && testArrayName[i][j] !== "") {
-                testArraySortTestersName[i][k] =testArrayName[i][j];
+                testArraySortTestersName[i][k] = testArrayName[i][j];
                 k++;
             }
         }
@@ -149,17 +149,27 @@ function testersInRegression() {
     }
 
     var m = 0;
+    var checkEmptyInput = 0;
+    var checkEmptyOutput = 0;
 
     for (var i = 0; i < testArrayTime.length; i++) {
+
         var k = 0;
         testArraySortTestersTime[i] = [];
-        for (var j = 0; j < testArrayTime[i].length; j++) {    
+        checkEmptyInput = checkEmptyOutput;
+
+        for (var j = 0; j < testArrayTime[i].length; j++) {
             if (typeof testArrayTime[i][j] !== undefined && testArrayTime[i][j] !== null && testArrayTime[i][j] !== "") {
-                testArraySortTestersTime[m][k] =testArrayTime[i][j];
+                testArraySortTestersTime[m][k] = testArrayTime[i][j];
                 k++;
+                checkEmptyOutput++;
             }
         }
-        m++;
+
+        if (checkEmptyInput != checkEmptyOutput) {
+            m++;
+        }
+
     }
 
     console.log(testArrayName);
