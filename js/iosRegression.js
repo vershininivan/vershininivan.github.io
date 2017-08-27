@@ -182,7 +182,7 @@ function calculateEstimate() {
         }
 
     }
-
+    console.log(testArraySortTestersName.length);
     console.log(estimateTestersInRegression);
 
 }
