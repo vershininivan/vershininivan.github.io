@@ -127,6 +127,8 @@ function testersInRegression() {
 
     for (var i = 0; i < tableRawArray.length; i++) {
 
+        console.log(tableRawArray.length);
+
         RegexVar = tableRawArray[i][6].match(/[А-Яа-я]*/ig);
         testArrayName.push(RegexVar);
         RegexVar = testArrayTime[i][7].match(/[А-Яа-я]*/ig);
