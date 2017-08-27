@@ -173,9 +173,9 @@ function calculateEstimate() {
 
         for (var j = 0; j < testArraySortTestersName.length; j++) {
 
-            for (var k = 0; k < testArraySortTestersName[i].length; k++) {
-                if (testArraySortTestersName[i][k] == testersInRegressionSortArray[i]){
-                    testersInRegressionSortArray[i][1] += testArraySortTestersTime[i][k];
+            for (var k = 0; k < testArraySortTestersName[j].length; k++) {
+                if (testArraySortTestersName[j][k] == testersInRegressionSortArray[i]){
+                    testersInRegressionSortArray[i][1] += testArraySortTestersTime[j][k];
                 }
             }
 
