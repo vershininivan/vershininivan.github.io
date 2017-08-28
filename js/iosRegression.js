@@ -34,6 +34,11 @@ window.onload = function () {
             //вызываем функцию для рассчета сколько каждый тестер сделал в регрессии
             calculateEstimate();
 
+            // Load the Visualization API and the corechart package.
+            google.charts.load('current', { 'packages': ['corechart'] });
+            // Set a callback to run when the Google Visualization API is loaded.
+            google.charts.setOnLoadCallback(drawChart);
+
         });
     });
 }
@@ -138,6 +143,9 @@ function calculateEstimate() {
     var testArrayName = [];
     var testArrayTime = [];
 
+    //Фильтрация по регулярному выражению тестером и таймингов
+    // [i][6] - по 7 столбцу - тестировщик на aPad
+    // [i][7] - по 8 столбцу - тайминги на aPad
     for (var i = 2; i < tableRawArray.length; i++) {
         RegexVar = tableRawArray[i][6].match(/[А-Яа-я]*/ig);
         testArrayName.push(RegexVar);
@@ -148,6 +156,7 @@ function calculateEstimate() {
     var testArraySortTestersName = [];
     var testArraySortTestersTime = [];
 
+    // После фильтрации участников в регресии убираем лишние пустые строки
     for (var i = 0; i < testArrayName.length; i++) {
         var k = 0;
         testArraySortTestersName[i] = [];
@@ -159,6 +168,7 @@ function calculateEstimate() {
         }
     }
 
+    // После фильтрации таймингов в регресии убираем лишние пустые строки и преоразуем в числовой тип
     for (var i = 0; i < testArrayTime.length; i++) {
         var k = 0;
         testArraySortTestersTime[i] = [];
@@ -170,21 +180,8 @@ function calculateEstimate() {
         }
     }
 
-    //stringToInt();
-    /*console.log("Данные testArraySortTestersTime до преобразования");
-    console.log(testArraySortTestersTime);
-
-    for (var i = 0; i < testArraySortTestersTime.length; i++) {
-        for (var j = 0; j < testArraySortTestersTime[i].length; j++) {
-            testArraySortTestersTime[i][j] = parseInt(testArraySortTestersTime[i][j]);
-        }
-    }
-
-    console.log("Данные testArraySortTestersTime после преобразования");
-    console.log(testArraySortTestersTime);*/
-
+    // Собираем данные по кажому тестировщику, сколько времени затрачено в регресии
     var estimateTestersInRegression = []
-
     for (var i = 0; i < testersInRegressionSortArray.length; i++) {
 
         estimateTestersInRegression[i] = [];
@@ -202,17 +199,27 @@ function calculateEstimate() {
 
     }
 
-    //console.log(testersInRegressionSortArray);
-    
-    //console.log(testArraySortTestersName);
     console.log(estimateTestersInRegression);
 
 }
 
-/*function stringToInt(){
-    for (var i = 0; i < testArraySortTestersTime.length; i++) {
-        for (var j = 0; j < testArraySortTestersTime[i].length; j++) {
-            testArraySortTestersTime[i][j] = parseInt(testArraySortTestersTime[i][j]);
-        } 
-    }
-}*/
+function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows(estimateTestersInRegression);
+
+    // Set chart options
+    var options = {
+        'title': 'Участие в регресии',
+        'width': 700,
+        'height': 600,
+        'pieHole': 0.4
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+}
