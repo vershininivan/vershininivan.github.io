@@ -194,6 +194,8 @@ function calculateEstimate() {
     }
     */
 
+    stringToInt();
+
     var estimateTestersInRegression = []
 
     for (var i = 0; i < testersInRegressionSortArray.length; i++) {
@@ -218,4 +220,12 @@ function calculateEstimate() {
     console.log(testArraySortTestersName);
     console.log(estimateTestersInRegression);
 
+}
+
+function stringToInt(){
+    for (var i = 0; i < testArraySortTestersTime.length; i++) {
+        for (var j = 0; j < testArraySortTestersTime[i].length; j++) {
+            testArraySortTestersTime[i][j] = parseInt(testArraySortTestersTime[i][j]);
+        } 
+    }
 }
