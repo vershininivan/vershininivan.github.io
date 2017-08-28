@@ -17,7 +17,6 @@ var text_1 = "";
 var testersInRegressionArray = [];
 var estimateTestersInRegression = []
 
-
 window.onload = function () {
     $(document).ready(function () {
         $.getJSON("src/regressionTable.json", function (jsonToArray) {
@@ -92,7 +91,8 @@ function getHeaderTable() {
 //Функция для получения строк таблицы
 function getRawTable() {
 
-    for (var i = 0; i < tableArray.data.rows.length; i++) {
+    //for (var i = 0; i < tableArray.data.rows.length; i++) {
+    for (var i = 0; i < 48; i++) {
 
         var rowArray = tableArray.data.rows[i];
 
