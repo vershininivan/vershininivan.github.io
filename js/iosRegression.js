@@ -92,7 +92,7 @@ function getHeaderTable() {
 function getRawTable() {
 
     //for (var i = 0; i < tableArray.data.rows.length; i++) {
-    for (var i = 0; i < 48; i++) {
+    for (var i = 0; i < 50; i++) {
 
         var rowArray = tableArray.data.rows[i];
 
