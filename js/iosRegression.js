@@ -196,5 +196,8 @@ function calculateEstimate() {
     console.log(testArraySortTestersTime);
     console.log(testArraySortTestersName);
     console.log(estimateTestersInRegression);
+    alert(testArraySortTestersTime);
+    alert(testArraySortTestersName);
+
 
 }
