@@ -170,31 +170,13 @@ function calculateEstimate() {
         }
     }
 
+    //stringToInt();
 
-
-    /*
-    var peopleReg = ["Кира", "Гриша", "Лена", "Стася"];
-    var peopleTime = [];
-    
-    console.log(peopleInReg.length);
-    console.log(peopleInReg[0].length);
-    console.log(time.length);
-    
-    for (var i = 0; i < peopleReg.length; i++) {
-        peopleTime[i] = [];
-        peopleTime[i][0] = peopleReg[i];
-        peopleTime[i][1] = 0;
-        for (var j = 0; j < peopleInReg.length; j++) {
-            for (var k = 0; k < peopleInReg[j].length; k++) {
-                if (peopleInReg[j][k] == peopleReg[i]) {
-                    peopleTime[i][1] += time[j][k];
-                }
-            }
+    for (var i = 0; i < testArraySortTestersTime.length; i++) {
+        for (var j = 0; j < testArraySortTestersTime[i].length; j++) {
+            testArraySortTestersTime[i][j] = parseInt(testArraySortTestersTime[i][j]);
         }
     }
-    */
-
-    stringToInt();
 
     var estimateTestersInRegression = []
 
@@ -222,10 +204,10 @@ function calculateEstimate() {
 
 }
 
-function stringToInt(){
+/*function stringToInt(){
     for (var i = 0; i < testArraySortTestersTime.length; i++) {
         for (var j = 0; j < testArraySortTestersTime[i].length; j++) {
             testArraySortTestersTime[i][j] = parseInt(testArraySortTestersTime[i][j]);
         } 
     }
-}
+}*/
