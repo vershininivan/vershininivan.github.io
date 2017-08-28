@@ -171,12 +171,17 @@ function calculateEstimate() {
     }
 
     //stringToInt();
+    console.log("Данные testArraySortTestersTime до преобразования");
+    console.log(testArraySortTestersTime);
 
     for (var i = 0; i < testArraySortTestersTime.length; i++) {
         for (var j = 0; j < testArraySortTestersTime[i].length; j++) {
             testArraySortTestersTime[i][j] = parseInt(testArraySortTestersTime[i][j]);
         }
     }
+
+    console.log("Данные testArraySortTestersTime после преобразования");
+    console.log(testArraySortTestersTime);
 
     var estimateTestersInRegression = []
 
@@ -198,8 +203,8 @@ function calculateEstimate() {
     }
 
     //console.log(testersInRegressionSortArray);
-    console.log(testArraySortTestersTime);
-    console.log(testArraySortTestersName);
+    
+    //console.log(testArraySortTestersName);
     console.log(estimateTestersInRegression);
 
 }
