@@ -128,7 +128,7 @@ function testersInRegression() {
 
     testersInRegressionSortArray = newArray;
 
-    console.log(testersInRegressionSortArray);
+    //console.log(testersInRegressionSortArray);
 
 }
 
@@ -170,20 +170,41 @@ function calculateEstimate() {
         }
     }
 
+
+
+    /*
+    var peopleReg = ["Кира", "Гриша", "Лена", "Стася"];
+    var peopleTime = [];
+    
+    console.log(peopleInReg.length);
+    console.log(peopleInReg[0].length);
+    console.log(time.length);
+    
+    for (var i = 0; i < peopleReg.length; i++) {
+        peopleTime[i] = [];
+        peopleTime[i][0] = peopleReg[i];
+        peopleTime[i][1] = 0;
+        for (var j = 0; j < peopleInReg.length; j++) {
+            for (var k = 0; k < peopleInReg[j].length; k++) {
+                if (peopleInReg[j][k] == peopleReg[i]) {
+                    peopleTime[i][1] += time[j][k];
+                }
+            }
+        }
+    }
+    */
+
     var estimateTestersInRegression = []
-    estimateTestersInRegression = testersInRegressionSortArray;
 
     for (var i = 0; i < testersInRegressionSortArray.length; i++) {
 
+        estimateTestersInRegression[i] = [];
+        estimateTestersInRegression[i][0] = testersInRegressionSortArray[i];
+        estimateTestersInRegression[i][1] = 0;
+
         for (var j = 0; j < testArraySortTestersName.length; j++) {
-            estimateTestersInRegression[i][1] = [];
             for (var k = 0; k < testArraySortTestersName[j].length; k++) {
-                /*console.log(testArraySortTestersName[j][k]);
-                console.log(testersInRegressionSortArray[i]);
-                console.log(testersInRegressionSortArray);*/
-                if (testArraySortTestersName[j][k] == testersInRegressionSortArray[i]){
-                    console.log(j);
-                    console.log(testersInRegressionSortArray[i]);
+                if (testArraySortTestersName[j][k] == testersInRegressionSortArray[i]) {
                     estimateTestersInRegression[i][1] += testArraySortTestersTime[j][k];
                 }
             }
@@ -196,7 +217,5 @@ function calculateEstimate() {
     console.log(testArraySortTestersTime);
     console.log(testArraySortTestersName);
     console.log(estimateTestersInRegression);
-    $(".testArraySortTestersTime").html(testArraySortTestersTime);
-    $(".testArraySortTestersName").html(testArraySortTestersName);
 
 }

@@ -50,14 +50,25 @@ console.log(peopleInReg[0].length);
 console.log(time.length);
 
 for (var i = 0; i < peopleReg.length; i++) {
-    peopleTime[i] = 0;
+    peopleTime[i] = [];
+    peopleTime[i][0] = peopleReg[i];
+    peopleTime[i][1] = 0;
     for (var j = 0; j < peopleInReg.length; j++) {
         for (var k = 0; k < peopleInReg[j].length; k++) {
             if (peopleInReg[j][k] == peopleReg[i]) {
-                peopleTime[i] += time[j][k];
+                peopleTime[i][1] += time[j][k];
             }
         }
     }
 }
 
 console.log(peopleTime);
+
+/*console.log(peopleTime[0][0]);
+console.log(peopleTime[0][1]);
+console.log(peopleTime[1][0]);
+console.log(peopleTime[1][1]);
+console.log(peopleTime[2][0]);
+console.log(peopleTime[2][1]);
+console.log(peopleTime[3][0]);
+console.log(peopleTime[3][1]);*/
