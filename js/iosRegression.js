@@ -199,5 +199,4 @@ function calculateEstimate() {
     $(".testArraySortTestersTime").html(testArraySortTestersTime);
     $(".testArraySortTestersName").html(testArraySortTestersName);
 
-
 }
