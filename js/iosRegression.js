@@ -15,6 +15,7 @@ var testersInRegressionArray = [];
 var testersInRegressionSortArray = [];
 var text_1 = "";
 var testersInRegressionArray = [];
+var estimateTestersInRegression = []
 
 
 window.onload = function () {
@@ -181,7 +182,7 @@ function calculateEstimate() {
     }
 
     // Собираем данные по кажому тестировщику, сколько времени затрачено в регресии
-    var estimateTestersInRegression = []
+    
     for (var i = 0; i < testersInRegressionSortArray.length; i++) {
 
         estimateTestersInRegression[i] = [];
