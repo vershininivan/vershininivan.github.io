@@ -164,14 +164,14 @@ function calculateEstimate() {
         testArraySortTestersTime[i] = [];
         for (var j = 0; j < testArrayTime[i].length; j++) {
             if (typeof testArrayTime[i][j] !== undefined && testArrayTime[i][j] !== null && testArrayTime[i][j] !== "") {
-                testArraySortTestersTime[i][k] = testArrayTime[i][j];
+                testArraySortTestersTime[i][k] = parseInt(testArrayTime[i][j]);
                 k++;
             }
         }
     }
 
     //stringToInt();
-    console.log("Данные testArraySortTestersTime до преобразования");
+    /*console.log("Данные testArraySortTestersTime до преобразования");
     console.log(testArraySortTestersTime);
 
     for (var i = 0; i < testArraySortTestersTime.length; i++) {
@@ -181,7 +181,7 @@ function calculateEstimate() {
     }
 
     console.log("Данные testArraySortTestersTime после преобразования");
-    console.log(testArraySortTestersTime);
+    console.log(testArraySortTestersTime);*/
 
     var estimateTestersInRegression = []
 
