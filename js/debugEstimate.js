@@ -44,8 +44,6 @@ var peopleInReg = [
 
 var peopleReg = ["Кира", "Гриша", "Лена", "Стася"];
 var peopleTime = [];
-var perem_1 = 0;
-var perem_2 = 0;
 
 console.log(peopleInReg.length);
 console.log(peopleInReg[0].length);
@@ -63,23 +61,3 @@ for (var i = 0; i < peopleReg.length; i++) {
 }
 
 console.log(peopleTime);
-
-google.charts.load("current", { packages: ["corechart"] });
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-        ['Task', 'Hours per Day'],
-        [peopleReg[0], peopleTime[0]],
-        [peopleReg[1], peopleTime[1]],
-        [peopleReg[2], peopleTime[2]],
-        [peopleReg[3], peopleTime[3]]
-    ]);
-
-    var options = {
-        title: 'My Daily Activities',
-        pieHole: 0.4,
-    };
-
-    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-    chart.draw(data, options);
-}
