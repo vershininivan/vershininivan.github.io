@@ -64,16 +64,16 @@ for (var i = 0; i < peopleReg.length; i++) {
     }
 }
 
-//console.log(peopleTime);
+console.log(peopleTime);
 
-console.log(peopleTime[0][0]);
+/*console.log(peopleTime[0][0]);
 console.log(peopleTime[0][1]);
 console.log(peopleTime[1][0]);
 console.log(peopleTime[1][1]);
 console.log(peopleTime[2][0]);
 console.log(peopleTime[2][1]);
 console.log(peopleTime[3][0]);
-console.log(peopleTime[3][1]);
+console.log(peopleTime[3][1]);*/
 
 function stringToInt(){
     for (var i = 0; i < time.length; i++) {
