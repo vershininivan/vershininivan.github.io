@@ -183,6 +183,7 @@ function calculateEstimate() {
                 console.log(testersInRegressionSortArray);*/
                 if (testArraySortTestersName[j][k] == testersInRegressionSortArray[i]){
                     console.log(j);
+                    console.log(testersInRegressionSortArray[i]);
                     estimateTestersInRegression[i][1] += testArraySortTestersTime[j][k];
                 }
             }
