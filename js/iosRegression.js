@@ -158,6 +158,7 @@ function calculateEstimate() {
     var testArraySortTestersTime = [];
 
     // После фильтрации участников в регресии убираем лишние пустые строки
+    // алгоритм должен вернуть массив с участиками регресии
     for (var i = 0; i < testArrayName.length; i++) {
         var k = 0;
         testArraySortTestersName[i] = [];
@@ -170,6 +171,7 @@ function calculateEstimate() {
     }
 
     // После фильтрации таймингов в регресии убираем лишние пустые строки и преоразуем в числовой тип
+    // алгоритм должен вернуть массив с данными по эстимейтам
     for (var i = 0; i < testArrayTime.length; i++) {
         var k = 0;
         testArraySortTestersTime[i] = [];
