@@ -91,8 +91,8 @@
       "platform": "phone",
       "factory": "Huawei",
       "model": "Nexus 6P",
-      "osVersionFull": "7.1.2",
-      "osVersionShort": "7",
+      "osVersionFull": "8.0",
+      "osVersionShort": "8",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
@@ -601,8 +601,8 @@
       "platform": "phone",
       "factory": "LG",
       "model": "Nexus 5X (H791)",
-      "osVersionFull": "7.1.2",
-      "osVersionShort": "7",
+      "osVersionFull": "6.0.1",
+      "osVersionShort": "6",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
@@ -618,8 +618,8 @@
       "platform": "pad",
       "factory": "Sony",
       "model": "Xperia Z2 Tablet",
-      "osVersionFull": "5.1.1",
-      "osVersionShort": "5",
+      "osVersionFull": "6.0.1",
+      "osVersionShort": "6",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
@@ -907,8 +907,8 @@
       "platform": "pad",
       "factory": "Samsung",
       "model": "Galaxy Tab A (SM-T555)",
-      "osVersionFull": "5.0.2",
-      "osVersionShort": "5",
+      "osVersionFull": "6.0.1",
+      "osVersionShort": "6",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
