@@ -4,6 +4,7 @@ var arrayListPhone4x = [];
 var arrayListPhone5x = [];
 var arrayListPhone6x = [];
 var arrayListPhone7x = [];
+var arrayListPhone8x = [];
 
 var arrayListPad4x = [];
 var arrayListPad5x = [];
@@ -14,6 +15,7 @@ var stringListPhone4x = "";
 var stringListPhone5x = "";
 var stringListPhone6x = "";
 var stringListPhone7x = "";
+var stringListPhone8x = "";
 
 var stringListPad4x = "";
 var stringListPad5x = "";
@@ -61,6 +63,10 @@ window.onload = function () {
                         case '7':
                             arrayListPhone7x.push(arrayDevice.devices[i].id);
                             arrayListPhone7x.push(fullDeviceName());
+                            break;
+                        case '8':
+                            arrayListPhone8x.push(arrayDevice.devices[i].id);
+                            arrayListPhone8x.push(fullDeviceName());
                             break;
                         default:
                             console.log("что-то пошло не так с телефонами " + i);
@@ -112,6 +118,10 @@ window.onload = function () {
                 stringListPhone7x += htmlListFirst + arrayListPhone7x[i - 1] + htmlListFirst2 + arrayListPhone6x[i] + htmlListMiddle + arrayListPhone7x[i] + htmlListLast;
             }
 
+            for (var i = 1; i < arrayListPhone8x.length; i += 2) {
+                stringListPhone8x += htmlListFirst + arrayListPhone8x[i - 1] + htmlListFirst2 + arrayListPhone6x[i] + htmlListMiddle + arrayListPhone8x[i] + htmlListLast;
+            }
+
             for (var i = 1; i < arrayListPad4x.length; i += 2) {
                 stringListPad4x += htmlListFirst + arrayListPad4x[i - 1] + htmlListFirst2 + arrayListPad4x[i] + htmlListMiddle + arrayListPad4x[i] + htmlListLast;
             }
@@ -131,6 +141,7 @@ window.onload = function () {
             $(".listPhone5x").html(stringListPhone5x);
             $(".listPhone6x").html(stringListPhone6x);
             $(".listPhone7x").html(stringListPhone7x);
+            $(".listPhone8x").html(stringListPhone8x);
             $(".listPad4x").html(stringListPad4x);
             $(".listPad5x").html(stringListPad5x);
             $(".listPad6x").html(stringListPad6x);

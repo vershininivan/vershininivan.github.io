@@ -363,8 +363,8 @@
       "platform": "phone",
       "factory": "Xiaomi",
       "model": "Mi5",
-      "osVersionFull": "6.0.1",
-      "osVersionShort": "6",
+      "osVersionFull": "7.0",
+      "osVersionShort": "7",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
@@ -958,8 +958,8 @@
       "platform": "pad",
       "factory": "Samsung",
       "model": "Galaxy Tab S2 (SM-T719)",
-      "osVersionFull": "6.0.1",
-      "osVersionShort": "6",
+      "osVersionFull": "7.0",
+      "osVersionShort": "7",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
