@@ -601,8 +601,8 @@
       "platform": "phone",
       "factory": "LG",
       "model": "Nexus 5X (H791)",
-      "osVersionFull": "6.0.1",
-      "osVersionShort": "6",
+      "osVersionFull": "8.0",
+      "osVersionShort": "8",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
