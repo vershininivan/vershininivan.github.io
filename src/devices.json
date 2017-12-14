@@ -1111,8 +1111,8 @@
       "platform": "phone",
       "factory": "Samsung",
       "model": "Galaxy S6 (SM-G920F)",
-      "osVersionFull": "6.0.1",
-      "osVersionShort": "6",
+      "osVersionFull": "7.0",
+      "osVersionShort": "7",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
@@ -1179,8 +1179,8 @@
       "platform": "phone",
       "factory": "Samsung",
       "model": "Galaxy A5 SM-A510F Gold",
-      "osVersionFull": "6.0.1",
-      "osVersionShort": "6",
+      "osVersionFull": "7.0",
+      "osVersionShort": "7",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
@@ -1213,8 +1213,8 @@
       "platform": "phone",
       "factory": "Xiaomi",
       "model": "Redmi Note 4",
-      "osVersionFull": "4.4.2",
-      "osVersionShort": "4",
+      "osVersionFull": "7.0",
+      "osVersionShort": "7",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
