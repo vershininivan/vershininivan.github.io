@@ -1088,6 +1088,142 @@
         "pxPpi": "800x1280",
         "dpi": "xhdpi"
       }
+    },
+    {
+      "id": 64,
+      "platform": "pad",
+      "factory": "Lenovo",
+      "model": "Tab 3 850M",
+      "osVersionFull": "6.0",
+      "osVersionShort": "6",
+      "weakDevice": false,
+      "isUsed": false,
+      "deviceInfo": {
+        "diagonal": 8,
+        "isSettingsTablet": false,
+        "processor": "MTK8735P",
+        "pxPpi": "1280х800",
+        "dpi": "xhdpi"
+      }
+    },
+    {
+      "id": 65,
+      "platform": "phone",
+      "factory": "Samsung",
+      "model": "Galaxy S6 (SM-G920F)",
+      "osVersionFull": "6.0.1",
+      "osVersionShort": "6",
+      "weakDevice": false,
+      "isUsed": false,
+      "deviceInfo": {
+        "diagonal": 5.1,
+        "isSettingsTablet": false,
+        "processor": "?",
+        "pxPpi": "1440х2560",
+        "dpi": "xxxhdpi"
+      }
+    },
+    {
+      "id": 66,
+      "platform": "phone",
+      "factory": "Samsung",
+      "model": "Galaxy J1 (SM-J120F)",
+      "osVersionFull": "5.1.1",
+      "osVersionShort": "5",
+      "weakDevice": false,
+      "isUsed": false,
+      "deviceInfo": {
+        "diagonal": 4.5,
+        "isSettingsTablet": false,
+        "processor": "?",
+        "pxPpi": "480х800",
+        "dpi": "hdpi"
+      }
+    },
+    {
+      "id": 67,
+      "platform": "phone",
+      "factory": "Samsung",
+      "model": "Galaxy J3 (SM-J320F Gold DS)",
+      "osVersionFull": "5.1.1",
+      "osVersionShort": "5",
+      "weakDevice": false,
+      "isUsed": false,
+      "deviceInfo": {
+        "diagonal": 5.0,
+        "isSettingsTablet": false,
+        "processor": "?",
+        "pxPpi": "720х1280",
+        "dpi": "xhdpi"
+      }
+    },
+    {
+      "id": 35,
+      "platform": "phone",
+      "factory": "LG",
+      "model": "Nexus White  5X (H791)",
+      "osVersionFull": "6.0",
+      "osVersionShort": "6",
+      "weakDevice": false,
+      "isUsed": false,
+      "deviceInfo": {
+        "diagonal": 5.2,
+        "isSettingsTablet": false,
+        "processor": "Qualcomm Snapdragon 808 (MSM8992)",
+        "pxPpi": "1080x1920",
+        "dpi": "xxxhdpi"
+      }
+    },
+    {
+      "id": 69,
+      "platform": "phone",
+      "factory": "Samsung",
+      "model": "Galaxy Tab 3 (SM-T310)",
+      "osVersionFull": "4.4.2",
+      "osVersionShort": "4",
+      "weakDevice": false,
+      "isUsed": false,
+      "deviceInfo": {
+        "diagonal": 8,
+        "isSettingsTablet": false,
+        "processor": "Samsung Exynos 4 Dual 4212",
+        "pxPpi": "800x1280",
+        "dpi": "xhdpi"
+      }
+    },
+    {
+      "id": 70,
+      "platform": "phone",
+      "factory": "Xiaomi",
+      "model": "Mi A1",
+      "osVersionFull": "7.1.2",
+      "osVersionShort": "7",
+      "weakDevice": false,
+      "isUsed": false,
+      "deviceInfo": {
+        "diagonal": 5.5,
+        "isSettingsTablet": false,
+        "processor": "?",
+        "pxPpi": "1080х1920",
+        "dpi": "xxxhdpi"
+      }
+    },
+    {
+      "id": 71,
+      "platform": "phone",
+      "factory": "Xiaomi",
+      "model": "Redmi Note 4",
+      "osVersionFull": "4.4.2",
+      "osVersionShort": "4",
+      "weakDevice": false,
+      "isUsed": false,
+      "deviceInfo": {
+        "diagonal": 5.5,
+        "isSettingsTablet": false,
+        "processor": "?",
+        "pxPpi": "1080х1920",
+        "dpi": "xxxhdpi"
+      }
     }
   ]
 }
