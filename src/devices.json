@@ -1158,7 +1158,7 @@
       }
     },
     {
-      "id": 35,
+      "id": 68,
       "platform": "phone",
       "factory": "LG",
       "model": "Nexus White  5X (H791)",
@@ -1178,17 +1178,17 @@
       "id": 69,
       "platform": "phone",
       "factory": "Samsung",
-      "model": "Galaxy Tab 3 (SM-T310)",
-      "osVersionFull": "4.4.2",
-      "osVersionShort": "4",
+      "model": "Galaxy A5 SM-A510F Gold",
+      "osVersionFull": "6.0.1",
+      "osVersionShort": "6",
       "weakDevice": false,
       "isUsed": false,
       "deviceInfo": {
-        "diagonal": 8,
+        "diagonal": 5.2,
         "isSettingsTablet": false,
-        "processor": "Samsung Exynos 4 Dual 4212",
-        "pxPpi": "800x1280",
-        "dpi": "xhdpi"
+        "processor": "?",
+        "pxPpi": "1080x1920",
+        "dpi": "xxxhdpi"
       }
     },
     {
