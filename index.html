@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/mainStyle.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="table-wrap">
+    <table>
+        <tbody>
+        <tr>
+            <td data-label="Услуга">
+                <div class="form_radio_btn">
+                    <input id="radio-1" type="radio" name="radio" value="1">
+                    <label for="radio-1">Radio button 1</label>
+                </div>
+                <div class="form_radio_btn">
+                    <input id="radio-2" type="radio" name="radio" value="2">
+                    <label for="radio-2">Radio button 2</label>
+                </div>
+                <div class="form_radio_btn">
+                    <input id="radio-3" type="radio" name="radio" value="3">
+                    <label for="radio-3">Radio button 3</label>
+                </div>
+                <div class="form_radio_btn">
+                    <input id="radio-4" type="radio" name="radio" value="2">
+                    <label for="radio-4">Radio button 2</label>
+                </div>
+                <div class="form_radio_btn">
+                    <input id="radio-5" type="radio" name="radio" value="3">
+                    <label for="radio-5">Radio button 3</label>
+                </div>
+            </td>
+            <td data-label="Описание">
+                <div class="form_radio_btn">
+                    <input id="radio-6" type="radio" name="radio_2" value="1">
+                    <label for="radio-6">Radio button 1</label>
+                </div>
+                <div class="form_radio_btn">
+                    <input id="radio-7" type="radio" name="radio_2" value="2">
+                    <label for="radio-7">Radio button 2</label>
+                </div>
+                <div class="form_radio_btn">
+                    <input id="radio-8" type="radio" name="radio_2" value="3">
+                    <label for="radio-8">Radio button 3</label>
+                </div>
+            </td>
+            <td>
+                <div class="values" id="bar">
+                    Ни один чекбокс не выбран
+                </div>
+                <button class="button" data-clipboard-action="copy" data-clipboard-target="#bar" id="text-copy">
+                    Скопировать
+                </button>
+
+                <button class="button" id="restart-page">
+                    Снять выбор
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<script type="text/javascript">
+    const clipboard = new ClipboardJS('.button');
+    const boxes = $("input:radio");
+    boxes.on("change", function () {
+        const theArray = [];
+        for (let i = 0; i < boxes.length; i++) {
+            const box = boxes[i];
+            if ($(box).prop('checked')) {
+                theArray[theArray.length] = $(box).val();
+            }
+        }
+        $('#text-copy').css('background-color', '#ffdb4d');
+        showValues(theArray);
+    });
+
+    const showValues = function (array) {
+        var text = "";
+        if (array.length === 0) {
+            text += "Ни один чекбокс не выбран";
+            $('#text-copy').css('background-color', '#f2f2f2');
+        }
+        for (var i = 0; i < array.length; i++) {
+            text += array[i] + ",";
+        }
+        $(".values").html(text.slice(0,-1));
+    };
+
+    $('#restart-page').click(function () {
+        location.reload();
+    });
+</script>
+</body>
