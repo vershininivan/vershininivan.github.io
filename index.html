@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Полезные ресурсы для разработки и тестирования</title>
+    <title>Ресурсы для разработки и тестирования</title>
     <style>
         :root {
             --primary-color: #3498db;
             --secondary-color: #2c3e50;
             --accent-color: #e74c3c;
             --text-color: #333;
-            --light-color: #ecf0f1;
+            --light-color: #f8f9fa;
             --border-radius: 8px;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             --transition: all 0.3s ease;
@@ -30,7 +30,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 40px auto;
             padding: 40px;
             background-color: white;
@@ -38,12 +38,9 @@
             box-shadow: var(--shadow);
         }
 
-        h1, h2 {
+        h1 {
             color: var(--secondary-color);
             text-align: center;
-        }
-
-        h1 {
             margin-bottom: 30px;
             font-size: 2.5rem;
             position: relative;
@@ -62,125 +59,144 @@
             border-radius: 2px;
         }
 
-        .resource-grid {
+        .resources {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
             margin-top: 30px;
         }
 
-        .resource-card {
+        .card {
             background-color: white;
             border-radius: var(--border-radius);
-            padding: 20px;
             box-shadow: var(--shadow);
             transition: var(--transition);
-            border-top: 4px solid var(--primary-color);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .specbox .card-header {
+            background-color: #3498db;
+        }
+
+        .testplane .card-header {
+            background-color: #e74c3c;
+        }
+
+        .testplane-resources .card-header {
+            background-color: #f39c12;
+        }
+
+        .storybook .card-header {
+            background-color: #9b59b6;
+        }
+
+        .gravity-ui .card-header {
+            background-color: #2ecc71;
+        }
+
+        .card-icon {
+            font-size: 1.5rem;
+            margin-right: 12px;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
 
-        .resource-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .resource-card:nth-child(2) {
-            border-top-color: var(--accent-color);
-        }
-
-        .resource-card:nth-child(3) {
-            border-top-color: #f39c12;
-        }
-
-        .resource-card:nth-child(4) {
-            border-top-color: #9b59b6;
-        }
-
-        .resource-card:nth-child(5) {
-            border-top-color: #1abc9c;
-        }
-
-        .resource-icon {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: var(--primary-color);
-        }
-
-        .resource-card:nth-child(2) .resource-icon {
-            color: var(--accent-color);
-        }
-
-        .resource-card:nth-child(3) .resource-icon {
-            color: #f39c12;
-        }
-
-        .resource-card:nth-child(4) .resource-icon {
-            color: #9b59b6;
-        }
-
-        .resource-card:nth-child(5) .resource-icon {
-            color: #1abc9c;
-        }
-
-        h3 {
-            margin-top: 0;
-            margin-bottom: 10px;
-            color: var(--secondary-color);
-        }
-
-        p {
-            margin-bottom: 15px;
-            flex-grow: 1;
+        .card-description {
+            margin-bottom: 20px;
             color: #666;
+            flex-grow: 1;
         }
 
-        a.btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: var(--primary-color);
+        .card-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
             color: white;
             text-decoration: none;
             border-radius: var(--border-radius);
             transition: var(--transition);
-            text-align: center;
             font-weight: 500;
         }
 
-        a.btn:hover {
+        .btn-icon {
+            margin-right: 8px;
+        }
+
+        .btn-github {
+            background-color: #24292e;
+        }
+
+        .btn-github:hover {
+            background-color: #1a1e21;
+        }
+
+        .btn-docs {
+            background-color: #3498db;
+        }
+
+        .btn-docs:hover {
             background-color: #2980b9;
         }
 
-        .resource-card:nth-child(2) a.btn {
-            background-color: var(--accent-color);
+        .btn-youtube {
+            background-color: #e62117;
         }
 
-        .resource-card:nth-child(2) a.btn:hover {
-            background-color: #c0392b;
+        .btn-youtube:hover {
+            background-color: #c51f1f;
         }
 
-        .resource-card:nth-child(3) a.btn {
-            background-color: #f39c12;
+        .btn-habr {
+            background-color: #65a3be;
         }
 
-        .resource-card:nth-child(3) a.btn:hover {
-            background-color: #d35400;
+        .btn-habr:hover {
+            background-color: #4a8bb0;
         }
 
-        .resource-card:nth-child(4) a.btn {
-            background-color: #9b59b6;
+        .btn-storybook {
+            background-color: #ff4785;
         }
 
-        .resource-card:nth-child(4) a.btn:hover {
-            background-color: #8e44ad;
+        .btn-storybook:hover {
+            background-color: #e6346e;
         }
 
-        .resource-card:nth-child(5) a.btn {
-            background-color: #1abc9c;
+        .btn-ui {
+            background-color: #2ecc71;
         }
 
-        .resource-card:nth-child(5) a.btn:hover {
-            background-color: #16a085;
+        .btn-ui:hover {
+            background-color: #27ae60;
         }
 
         footer {
@@ -196,7 +212,7 @@
                 margin: 20px;
             }
             
-            .resource-grid {
+            .resources {
                 grid-template-columns: 1fr;
             }
             
@@ -209,47 +225,100 @@
 </head>
 <body>
     <div class="container">
-        <h1>Полезные ресурсы</h1>
+        <h1>Ресурсы для разработки и тестирования</h1>
         
-        <div class="resource-grid">
-            <div class="resource-card">
-                <div class="resource-icon"><i class="fab fa-github"></i></div>
-                <h3>SpecBox</h3>
-                <p>Инструмент для работы со спецификациями, автоматизирующий тестирование на основе требований.</p>
-                <a href="https://github.com/spec-box" class="btn" target="_blank">Перейти в репозиторий</a>
+        <div class="resources">
+            <div class="card specbox">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <div>SpecBox</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-description">
+                        <p>Инструмент для работы со спецификациями, автоматизирующий тестирование на основе требований. Позволяет упростить документирование тестов и поддерживать спецификации в актуальном состоянии.</p>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/spec-box" class="btn btn-github" target="_blank">
+                            <i class="fab fa-github btn-icon"></i> Открыть репозиторий
+                        </a>
+                    </div>
+                </div>
             </div>
             
-            <div class="resource-card">
-                <div class="resource-icon"><i class="fas fa-plane"></i></div>
-                <h3>TestPlane</h3>
-                <p>Официальная документация TestPlane – платформы для управления тестированием и автоматизации.</p>
-                <a href="https://testplane.io/" class="btn" target="_blank">Изучить документацию</a>
+            <div class="card testplane">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-plane"></i></div>
+                    <div>TestPlane</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-description">
+                        <p>Платформа для управления тестированием и автоматизации в разработке. TestPlane предоставляет набор инструментов для эффективного управления тестами и их результатами.</p>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://testplane.io/" class="btn btn-docs" target="_blank">
+                            <i class="fas fa-book btn-icon"></i> Документация
+                        </a>
+                    </div>
+                </div>
             </div>
             
-            <div class="resource-card">
-                <div class="resource-icon"><i class="fas fa-microphone-alt"></i></div>
-                <h3>Доклад про TestPlane</h3>
-                <p>Презентация о TestPlane на конференции Heisenbug 2024 Autumn с демонстрацией возможностей.</p>
-                <a href="https://heisenbug.ru/archive/2024%20Autumn/talks/cea2674afcca4da6807486d9ec11cd51/" class="btn" target="_blank">Смотреть доклад</a>
+            <div class="card testplane-resources">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-info-circle"></i></div>
+                    <div>Про TestPlane</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-description">
+                        <p>Узнайте больше о TestPlane из различных источников — от технических статей до видеоматериалов, демонстрирующих возможности и принципы работы этой платформы.</p>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://www.youtube.com/watch?v=4ncAyWJiRnw" class="btn btn-youtube" target="_blank">
+                            <i class="fab fa-youtube btn-icon"></i> Видео на YouTube
+                        </a>
+                        <a href="https://habr.com/ru/companies/yandex/articles/890548/" class="btn btn-habr" target="_blank">
+                            <i class="fab fa-bookmark btn-icon"></i> Статья на Хабре
+                        </a>
+                    </div>
+                </div>
             </div>
             
-            <div class="resource-card">
-                <div class="resource-icon"><i class="fas fa-book"></i></div>
-                <h3>Storybook</h3>
-                <p>Среда разработки для UI компонентов, позволяющая создавать, просматривать и тестировать компоненты изолированно.</p>
-                <a href="https://storybook.js.org/" class="btn" target="_blank">Посетить сайт</a>
+            <div class="card storybook">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                    <div>Storybook</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-description">
+                        <p>Среда разработки для UI компонентов, позволяющая создавать, просматривать и тестировать компоненты изолированно. Упрощает разработку, тестирование и документирование интерфейсов.</p>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://storybook.js.org/" class="btn btn-storybook" target="_blank">
+                            <i class="fas fa-external-link-alt btn-icon"></i> Перейти на сайт
+                        </a>
+                    </div>
+                </div>
             </div>
             
-            <div class="resource-card">
-                <div class="resource-icon"><i class="fas fa-cubes"></i></div>
-                <h3>Gravity UI Storybook</h3>
-                <p>Библиотека UI-компонентов Gravity с документацией и интерактивными примерами использования.</p>
-                <a href="https://preview.gravity-ui.com/uikit/?path=/docs/components-inputs-button--docs" class="btn" target="_blank">Открыть библиотеку</a>
+            <div class="card gravity-ui">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-palette"></i></div>
+                    <div>Gravity UI</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-description">
+                        <p>Библиотека UI-компонентов Gravity с обширной документацией и интерактивными примерами использования. Готовые компоненты для быстрой разработки современных интерфейсов.</p>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://preview.gravity-ui.com/uikit/?path=/docs/components-inputs-button--docs" class="btn btn-ui" target="_blank">
+                            <i class="fas fa-cubes btn-icon"></i> Открыть библиотеку
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         
         <footer>
-            <p>© 2025 • Создано с любовью к качеству и тестированию</p>
+            <p>© 2024 • Создано с любовью к веб-разработке и тестированию</p>
         </footer>
     </div>
 </body>
